@@ -1,8 +1,27 @@
 %font-family{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif; //шрифт текста
 
 }
 %font-family-bold{
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif; //жирный шрифт текста
     font-weight: bold;
 }
+%bottom{                               //стилизация кнопки
+    border-radius: 100px;
+    background: var(--, #F6A6BF);
+}
+%bottom-small{
+    width: 220px;                    //малнькие кнопки
+    height: 60px;
+    flex-shrink: 0;
+}
+%bottom-big{
+    width: 330px;
+    height: 70px;                   //большие кнопки
+    flex-shrink: 0;
+}
+
+/*пример вызова: 
+.container {
+    @extend %font-family-bold;
+}*/

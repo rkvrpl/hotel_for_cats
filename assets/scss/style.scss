@@ -1,6 +1,9 @@
 @import "./global/normalize.scss";
 @import "./global/fonts.scss";
+
 @import "./abstracts/variables.scss";
+@import "./abstracts/templates.scss";
+
 @import "./components/header.scss";
 @import "./components/footer.scss";
 @import "./components/address.scss";
