@@ -1,0 +1,36 @@
+.footer {
+    display: grid;
+    grid-template-columns: 530px 1fr;
+    text-align: center;
+    @extend %font-family;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 100%;
+    ul{
+        list-style-type:  none;
+    }
+    @media screen  and (max-width: 320px){
+        display: block;
+    }
+}
+.footer__paragraph {
+    color: #28AFC9;
+    @extend %font-family;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.footer__nav {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    a{
+        color: $text-black;
+        text-decoration: none;
+        }
+    @media screen  and (max-width: 320px){
+        display: none;
+    }
+}
