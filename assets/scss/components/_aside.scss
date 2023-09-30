@@ -40,6 +40,10 @@
     width: 1200px;
     height: 500px;
     flex-shrink: 0;
+    @media screen  and (max-width: 320px){
+        width: 300px;
+        height: 230px;
+    }
 }
 .address__route {
     grid-area: 4/2/5/4;
@@ -69,10 +73,17 @@
     width: 195px;
     height: 200px;
     flex-shrink: 0;
+    @media screen  and (max-width: 320px){
+        display: none;
+    }
 }
 .address__img {
     align-self: center;
     width: 200px;
     height: 210px;
     flex-shrink: 0;
+    @media screen  and (max-width: 320px){
+        width: 200px;
+        height: 210px;
+    }
 }
