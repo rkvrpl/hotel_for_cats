@@ -314,11 +314,11 @@ template {
 .class-name {
     color: $text-black;
 } */
-.address, .footer {
+.address, .footer, .container {
   font-family: "Montserrat", sans-serif;
 }
 
-.address__title {
+.address__title, .header__info-data_text {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
 }
@@ -327,6 +327,35 @@ template {
 .container {
     @extend %font-family-bold;
 }*/
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.header__logo {
+  display: flex;
+  flex-direction: column;
+}
+
+.header__logo-img {
+  width: 187px;
+  height: 36px;
+}
+
+.header__logo-text {
+  color: #F6A6BF;
+  font-size: 1em;
+}
+
+.header__info-data_text {
+  font-size: 0.8em;
+}
+
+.header__info-data_geo-location, .header__info-data_clock, .header__info-data_call {
+  width: 25px;
+  height: 25px;
+}
+
 .footer {
   display: grid;
   grid-template-columns: 530px 1fr;

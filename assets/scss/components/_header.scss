@@ -1,0 +1,35 @@
+.container{
+    max-width:1600px;
+    margin: 0 auto;
+    @extend %font-family;
+}
+.header__logo {
+    display: flex;
+    flex-direction: column;
+}
+.header__logo-img {
+    width: 187px;
+    height: 36px;
+}
+.header__logo-text {
+    color: #F6A6BF;
+    font-size:1em;
+}
+.header__info-data {
+    // display: flex;
+    // flex-flow: row nowrap;
+    // justify-content: space-between;
+}
+.header__info-data_text {
+    font-size: 0.8em;
+    @extend %font-family-bold;
+}
+.header__info-data_geo-location,.header__info-data_clock ,.header__info-data_call {
+    width: 25px;
+    height: 25px;
+}
+.header__info-data_insta{
+    
+}
+.header__info-data_insta-img {
+}
