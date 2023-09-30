@@ -4,7 +4,6 @@
     text-align: center;
     @extend %font-family;
     font-size: 13px;
-    font-style: normal;
     font-weight: 600;
     line-height: 100%;
     ul{
@@ -16,9 +15,7 @@
 }
 .footer__paragraph {
     color: #28AFC9;
-    @extend %font-family;
     font-size: 14px;
-    font-style: normal;
     font-weight: 500;
     line-height: normal;
 }
