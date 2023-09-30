@@ -2,6 +2,9 @@
     max-width:1600px;
     margin: 0 auto;
     @extend %font-family;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .header__logo {
     display: flex;
@@ -16,20 +19,26 @@
     font-size:1em;
 }
 .header__info-data {
-    // display: flex;
-    // flex-flow: row nowrap;
-    // justify-content: space-between;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    gap:2.3em;
 }
 .header__info-data_text {
     font-size: 0.8em;
     @extend %font-family-bold;
 }
-.header__info-data_geo-location,.header__info-data_clock ,.header__info-data_call {
+.header__info-data_geo-location,.header__info-data_clock ,.header__info-data_call,.header__info-data_insta-img {
     width: 25px;
     height: 25px;
 }
-.header__info-data_insta{
-    
-}
-.header__info-data_insta-img {
+.header__info-data-btn_insta{
+    // @extend %button;
+    display: inline-block;
+    color: #fff;
+    font-size: 1.1em;
+    background-color: #F6A6BF;
+    text-decoration: none;
+    border-radius: 100px;
+    padding:1rem 1.5rem;
 }
