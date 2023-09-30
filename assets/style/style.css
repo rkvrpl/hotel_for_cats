@@ -335,11 +335,6 @@ template {
   align-items: center;
 }
 
-.header__logo {
-  display: flex;
-  flex-direction: column;
-}
-
 .header__logo-img {
   width: 187px;
   height: 36px;
@@ -348,13 +343,6 @@ template {
 .header__logo-text {
   color: #F6A6BF;
   font-size: 1em;
-}
-
-.header__info-data {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-around;
-  gap: 2.3em;
 }
 
 .header__info-data_text {
@@ -577,4 +565,20 @@ template {
   .footer__nav {
     display: none;
   }
+}
+
+.button {
+  border: 1px solid #F6A6BF;
+}
+
+.button {
+  border: 1px solid #FFFFFF;
+}
+
+.arrow {
+  border: 1px solid #F6A6BF;
+}
+
+.arrow {
+  border: 1px solid #FFFFFF;
 }/*# sourceMappingURL=style.css.map */

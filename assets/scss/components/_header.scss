@@ -7,8 +7,8 @@
     align-items: center;
 }
 .header__logo {
-    display: flex;
-    flex-direction: column;
+    // display: flex;
+    // flex-direction: column;
 }
 .header__logo-img {
     width: 187px;
@@ -19,10 +19,10 @@
     font-size:1em;
 }
 .header__info-data {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-around;
-    gap:2.3em;
+    // display: flex;
+    // flex-flow: row nowrap;
+    // justify-content: space-around;
+    // gap:2.3em;
 }
 .header__info-data_text {
     font-size: 0.8em;
