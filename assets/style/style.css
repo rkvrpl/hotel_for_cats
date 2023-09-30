@@ -374,6 +374,8 @@ template {
   text-decoration: none;
   border-radius: 100px;
   padding: 1rem 1.5rem;
+}
+
 .address {
   display: grid;
   grid-template-columns: 200px 1fr 1fr 200px;
