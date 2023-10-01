@@ -401,6 +401,12 @@ template {
   color: #242424;
   background-color: #FAF7F5;
 }
+@media screen and (max-width: 320px) {
+  .address {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 .address__title {
   grid-area: 1/2/2/3;
@@ -408,6 +414,13 @@ template {
   font-weight: 600;
   line-height: normal;
   margin-top: 1.7em;
+}
+@media screen and (max-width: 320px) {
+  .address__title {
+    font-size: 20px;
+    line-height: 140%;
+    margin: 1.5em 0 1.2em 0.4em;
+  }
 }
 
 .address__name {
@@ -419,6 +432,12 @@ template {
   text-decoration: none;
   color: #848484;
 }
+@media screen and (max-width: 320px) {
+  .address__name {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 .address__name-address {
   font-size: 20px;
@@ -426,12 +445,27 @@ template {
   line-height: 150%;
   margin: 15px 0 15px 0;
 }
+@media screen and (max-width: 320px) {
+  .address__name-address {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 140%;
+    margin: 0 7.3em 0.5em 0.4em;
+  }
+}
 
 .address__name-link {
   font-size: 18px;
   font-weight: 400;
   line-height: 140%;
   margin: 15px auto 15px 90px;
+}
+@media screen and (max-width: 320px) {
+  .address__name-link {
+    font-size: 16px;
+    opacity: 0.5;
+    margin: 0 0 1em 0.5em;
+  }
 }
 
 .address__map {
@@ -444,6 +478,7 @@ template {
   .address__map {
     width: 300px;
     height: 230px;
+    margin: 0 0 0 5px;
   }
 }
 
@@ -453,11 +488,23 @@ template {
   grid-template-columns: repeat(4, 1fr);
   margin: 4em 0 4em 0;
 }
+@media screen and (max-width: 320px) {
+  .address__route {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+}
 
 .address__how {
   display: flex;
   flex-direction: column;
   max-width: 236px;
+}
+@media screen and (max-width: 320px) {
+  .address__how {
+    margin: 0 0 1.2em -6px;
+  }
 }
 
 .address__comment {
@@ -466,12 +513,24 @@ template {
   line-height: 140%;
   margin: 10px 0 10px 18px;
 }
+@media screen and (max-width: 320px) {
+  .address__comment {
+    margin: 1em 0.8em 1em 1em;
+  }
+}
 
 .address__comment_bold {
   font-size: 26px;
   font-weight: 600;
   line-height: 140%;
   margin: 10px;
+}
+@media screen and (max-width: 320px) {
+  .address__comment_bold {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 2em 0 0 1em;
+  }
 }
 
 .address__img-paw {
@@ -496,5 +555,6 @@ template {
   .address__img {
     width: 200px;
     height: 210px;
+    margin: 0;
   }
 }/*# sourceMappingURL=style.css.map */
