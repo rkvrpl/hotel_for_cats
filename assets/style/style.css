@@ -335,11 +335,6 @@ template {
   align-items: center;
 }
 
-.header__logo {
-  display: flex;
-  flex-direction: column;
-}
-
 .header__logo-img {
   width: 187px;
   height: 36px;
@@ -348,13 +343,6 @@ template {
 .header__logo-text {
   color: #F6A6BF;
   font-size: 1em;
-}
-
-.header__info-data {
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: space-around;
-  gap: 2.3em;
 }
 
 .header__info-data_text {
@@ -376,6 +364,7 @@ template {
   padding: 1rem 1.5rem;
 }
 
+<<<<<<< HEAD
 .cctv {
   font-size: 40px;
   font-weight: 600;
@@ -439,6 +428,8 @@ template {
   transform: rotate(-45deg);
 }
 
+=======
+>>>>>>> 6b6dfe3500fec7905b5a56d18b10676d179338fa
 .address {
   display: grid;
   grid-template-columns: 200px 1fr 1fr 200px;
@@ -644,4 +635,20 @@ template {
   .footer__nav {
     display: none;
   }
+}
+
+.button {
+  border: 1px solid #F6A6BF;
+}
+
+.button {
+  border: 1px solid #FFFFFF;
+}
+
+.arrow {
+  border: 1px solid #F6A6BF;
+}
+
+.arrow {
+  border: 1px solid #FFFFFF;
 }/*# sourceMappingURL=style.css.map */
