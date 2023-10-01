@@ -1,0 +1,56 @@
+.cctv {
+    @extend %font-family;
+    font-size: 40px;
+    font-weight: 600;
+}
+.cctv__header {
+    display: flex;
+    flex-direction: row;
+}
+.cctv__title {
+    @extend %font-family-bold;
+    font-size: 40px;
+    font-weight: 600;
+}
+.cctv__header-paragraph {
+    max-width: 449px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 140%;
+}
+.cctv__paragraph {
+    max-width: 409px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 150%; 
+}
+.cctv__choice {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1200px;
+
+}
+.cctv__circle {
+    border-radius: 50%;
+    background-color: $background-ellipse;
+    width: 140px;
+    height: 140px;
+    flex-shrink: 0;
+}
+.cctv__number {
+    font-size: 40px;
+    font-weight: 600;
+    color: $text-color_number;
+}
+.cctv__paw {
+    position: absolute;
+    display: block;
+    width: 70px;
+    height: 57px;
+    background: url("/assets/icons/paw.svg");
+}
+.cctv__paw:hover{
+    background: url("/assets/icons/paw_pink.svg");
+    transform: rotate(-45deg);
+}

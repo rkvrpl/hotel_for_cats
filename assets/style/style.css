@@ -314,11 +314,11 @@ template {
 .class-name {
     color: $text-black;
 } */
-.footer, .address, .container {
+.footer, .address, .cctv, .container {
   font-family: "Montserrat", sans-serif;
 }
 
-.address__title, .header__info-data_text {
+.address__title, .cctv__title, .header__info-data_text {
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
 }
@@ -374,16 +374,83 @@ template {
   text-decoration: none;
   border-radius: 100px;
   padding: 1rem 1.5rem;
+}
+
+.cctv {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.cctv__header {
+  display: flex;
+  flex-direction: row;
+}
+
+.cctv__title {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.cctv__header-paragraph {
+  max-width: 449px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.cctv__paragraph {
+  max-width: 409px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 150%;
+}
+
+.cctv__choice {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 1200px;
+}
+
+.cctv__circle {
+  border-radius: 50%;
+  background-color: #FAF7F5;
+  width: 140px;
+  height: 140px;
+  flex-shrink: 0;
+}
+
+.cctv__number {
+  font-size: 40px;
+  font-weight: 600;
+  color: #E36F96;
+}
+
+.cctv__paw {
+  position: absolute;
+  display: block;
+  width: 70px;
+  height: 57px;
+  background: url("/assets/icons/paw.svg");
+}
+
+.cctv__paw:hover {
+  background: url("/assets/icons/paw_pink.svg");
+  transform: rotate(-45deg);
+}
+
 .address {
   display: grid;
   grid-template-columns: 200px 1fr 1fr 200px;
   color: #242424;
   background-color: #FAF7F5;
+  min-width: 1600px;
 }
 @media screen and (max-width: 320px) {
   .address {
     display: flex;
     flex-direction: column;
+    max-width: 320px;
   }
 }
 
@@ -455,8 +522,8 @@ template {
 }
 @media screen and (max-width: 320px) {
   .address__map {
-    width: 300px;
-    height: 230px;
+    max-width: 300px;
+    max-height: 230px;
     margin: 0 0 0 5px;
   }
 }
@@ -532,8 +599,8 @@ template {
 }
 @media screen and (max-width: 320px) {
   .address__img {
-    width: 200px;
-    height: 210px;
+    max-width: 200px;
+    max-height: 210px;
     margin: 0;
   }
 }
@@ -545,6 +612,7 @@ template {
   font-size: 13px;
   font-weight: 600;
   line-height: 100%;
+  max-width: 1600px;
 }
 .footer ul {
   list-style-type: none;
@@ -552,6 +620,7 @@ template {
 @media screen and (max-width: 320px) {
   .footer {
     display: block;
+    max-width: 320px;
   }
 }
 

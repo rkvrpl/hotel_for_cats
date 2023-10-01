@@ -4,9 +4,11 @@
     color: $text-black;
     background-color: $background-beige;
     @extend %font-family;
+    min-width: 1600px;
     @media screen  and (max-width: 320px){
         display: flex;
         flex-direction: column;
+        max-width: 320px;
     }
 }
 .address__title {
@@ -64,8 +66,8 @@
     height: 500px;
     flex-shrink: 0;
     @media screen  and (max-width: 320px){
-        width: 300px;
-        height: 230px;
+        max-width: 300px;
+        max-height: 230px;
         margin: 0 0 0 5px;
     }
 }
@@ -123,8 +125,8 @@
     height: 210px;
     flex-shrink: 0;
     @media screen  and (max-width: 320px){
-        width: 200px;
-        height: 210px;
+        max-width: 200px;
+        max-height: 210px;
         margin: 0;
     }
 }
