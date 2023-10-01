@@ -314,7 +314,7 @@ template {
 .class-name {
     color: $text-black;
 } */
-.address, .footer, .container {
+.footer, .address, .container {
   font-family: "Montserrat", sans-serif;
 }
 
@@ -354,45 +354,6 @@ template {
 .header__info-data_geo-location, .header__info-data_clock, .header__info-data_call {
   width: 25px;
   height: 25px;
-}
-
-.footer {
-  display: grid;
-  grid-template-columns: 530px 1fr;
-  text-align: center;
-  font-size: 13px;
-  font-weight: 600;
-  line-height: 100%;
-}
-.footer ul {
-  list-style-type: none;
-}
-@media screen and (max-width: 320px) {
-  .footer {
-    display: block;
-  }
-}
-
-.footer__paragraph {
-  color: #28AFC9;
-  font-size: 14px;
-  font-weight: 500;
-  line-height: normal;
-}
-
-.footer__nav {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-.footer__nav a {
-  color: #242424;
-  text-decoration: none;
-}
-@media screen and (max-width: 320px) {
-  .footer__nav {
-    display: none;
-  }
 }
 
 .address {
@@ -556,5 +517,44 @@ template {
     width: 200px;
     height: 210px;
     margin: 0;
+  }
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 530px 1fr;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 100%;
+}
+.footer ul {
+  list-style-type: none;
+}
+@media screen and (max-width: 320px) {
+  .footer {
+    display: block;
+  }
+}
+
+.footer__paragraph {
+  color: #28AFC9;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.footer__nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.footer__nav a {
+  color: #242424;
+  text-decoration: none;
+}
+@media screen and (max-width: 320px) {
+  .footer__nav {
+    display: none;
   }
 }/*# sourceMappingURL=style.css.map */
