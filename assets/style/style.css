@@ -364,7 +364,6 @@ template {
   padding: 1rem 1.5rem;
 }
 
-<<<<<<< HEAD
 .cctv {
   font-size: 40px;
   font-weight: 600;
@@ -428,8 +427,6 @@ template {
   transform: rotate(-45deg);
 }
 
-=======
->>>>>>> 6b6dfe3500fec7905b5a56d18b10676d179338fa
 .address {
   display: grid;
   grid-template-columns: 200px 1fr 1fr 200px;
@@ -651,4 +648,64 @@ template {
 
 .arrow {
   border: 1px solid #FFFFFF;
+}
+
+.all-about {
+  border: 1px solid blue;
+  max-width: 1600px;
+  max-height: 10898px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.all-about__top {
+  border: 1px solid red;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 90px 304px;
+  -moz-column-gap: 153px;
+       column-gap: 153px;
+}
+
+.all-about__title {
+  grid-column: 1;
+}
+
+.all-about__title_small {
+  grid-column: 1;
+}
+
+.all-about__right-side {
+  grid-row: 1/4;
+  grid-column: 2;
+}
+
+.we-offer {
+  border: 1px solid green;
+  display: grid;
+  grid-template-rows: 36px 1fr;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1600px;
+  width: 100%;
+}
+
+.we-offer__title {
+  grid-row: 1/2;
+  grid-column: span 3;
+}
+
+.we-offer__list {
+  grid-row: 2/3;
+  max-height: 5449px;
+  display: grid;
+}
+
+.we-offer__list_item-left {
+  grid-column: 1/2;
+}
+
+.we-offer__list_item-right {
+  grid-column: 2/3;
 }/*# sourceMappingURL=style.css.map */
