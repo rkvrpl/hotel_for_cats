@@ -1,44 +1,103 @@
+*{
+    outline:1px solid red;
+}
 .container{
     max-width:1600px;
-    margin: 0 auto;
+    // margin: 0 auto;
     @extend %font-family;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    margin-top: 1.8em;
 }
 .header__logo {
-    // display: flex;
-    // flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
-.header__logo-img {
-    width: 187px;
-    height: 36px;
+.header__img {
+    max-width: 100%;
 }
 .header__logo-text {
     color: #F6A6BF;
     font-size:1em;
 }
-.header__info-data {
-    // display: flex;
-    // flex-flow: row nowrap;
-    // justify-content: space-around;
-    // gap:2.3em;
+.header__info-data{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    gap:2.3em;
 }
-.header__info-data_text {
+.header__block{
+    display: flex;
+    padding-left: 0%;
+}
+.header__text {
     font-size: 0.8em;
     @extend %font-family-bold;
 }
-.header__info-data_geo-location,.header__info-data_clock ,.header__info-data_call,.header__info-data_insta-img {
-    width: 25px;
-    height: 25px;
+.header__geo-location,.header__clock ,.header__call,.header__insta-img {
+    max-width: 100%;
 }
-.header__info-data-btn_insta{
-    // @extend %button;
-    display: inline-block;
+.header__btn-insta{
+    display: flex;
+    align-items: center;
     color: #fff;
-    font-size: 1.1em;
+    font-size: 1em;
     background-color: #F6A6BF;
     text-decoration: none;
-    border-radius: 100px;
-    padding:1rem 1.5rem;
+    border-radius: 6.25em;
+    padding:0.8em;
+    border:1px solid #F6A6BF;
+}
+.header__btn-insta:hover{
+    background-color: #fff;
+    color:#F6A6BF;
+}
+
+.header__btn-insta:active{
+    color:#7BCBE2;
+}
+@media (max-width:1150px) {
+    .container{
+        justify-content: space-between;
+    }
+    .header__info-data{
+        gap: 1.2em ;
+    }
+    .header__text {
+        font-size: 0.6em;
+    }
+    .header__btn-insta{
+        font-size: 0.8em;
+        border-radius: 5em;
+    }
+}
+@media (max-width:820px){
+    .container{
+        flex-direction: column;
+        padding: 0;
+    }
+}
+@media (max-width:600px){
+    .header__info-data{
+        flex-direction: column;
+        justify-content: center;
+        gap: 1em;
+    }
+    .header__block{
+        flex-direction: column;
+        align-items: center;
+    }
+    .header__geo-location,.header__clock ,.header__call,.header__insta-img {
+        width: 22px;
+        height: 22px;
+    }
+    .header__text{
+        font-size: 0.8em;
+    }
+    .header__btn-insta{
+        font-size: 1em;
+    }
 }
