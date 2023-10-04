@@ -12,12 +12,21 @@
     grid-template-columns: 1fr 1fr;
     align-items: start;
     margin: 4vw 0;
+    @media screen  and (max-width: 768px){
+        display: flex;
+        flex-direction: column;
+    }
 }
 .cctv__title {
     grid-area: 1/1/2/2;
     @extend %font-family-bold;
     font-size: 40px;
     font-weight: 600;
+    line-height: 140%;
+    @media screen  and (max-width: 320px){
+        font-size: 20px;
+        margin: 5vw 0 5vw 3vw;
+    }
 }
 .cctv__header-paragraph {
     grid-area: 1/2/2/3;
@@ -26,14 +35,26 @@
     font-weight: 300;
     line-height: 140%;
     padding: 0 1vw;
+    @media screen  and (max-width: 320px){
+        max-width: 300px;
+        font-size: 16px;
+        margin: 5vw 0 5vw 3vw;
+        padding: 0 5vw 0 0;
+    }
 }
 .cctv__paragraph {
     max-width: 409px;
     font-size: 20px;
     font-weight: 400;
     line-height: 150%; 
-    margin: 0px 6vw 6vw 0;
+    margin: 0px 5vw 3vw 0;
     padding: 0 1vw;
+    @media screen  and (max-width: 320px){
+        max-width: 300px;
+        font-size: 16px;
+        margin: 0 0 5vw 3vw;
+        padding: 0 11vw 0 0;
+    }
 }
 .cctv__choice {
     display: flex;
@@ -41,7 +62,10 @@
     flex-wrap: wrap;
     justify-content: flex-start;
     max-width: 1200px;
-
+    @media screen  and (max-width: 320px){
+        max-width: 310px;
+        gap: 5vw;
+    }
 }
 .cctv__circle {
     position: relative;
@@ -52,6 +76,10 @@
     width: 140px;
     height: 140px;
     margin: 1vw 1.7vw 1vw 0;
+    @media screen  and (max-width: 320px){
+        width: 80px;
+        height: 80px;
+    }
 }
 .cctv__number {
     font-size: 40px;
@@ -59,6 +87,11 @@
     color: $text-color_number;
     z-index:20;
     margin: 0 auto;
+    @media screen  and (max-width: 320px){
+        width: 9px;
+        height: 28px;
+        font-size: 20px;
+    }
 }
 .cctv__paw {
     position: absolute;
@@ -69,18 +102,40 @@
     height: 57px;
     z-index: 2;
     background: url("/assets/icons/paw.svg");
+    @media screen  and (max-width: 320px){
+        width: 40px;
+        height: 33px;
+        top: 54px;
+        left: 44px;
+        background: url("/assets/icons/paw_small.svg");
+    }
 }
 .cctv__paw:hover{
     background: url("/assets/icons/paw_pink.svg");
     transform: rotate(-45deg);
     z-index: 2;
+    @media screen  and (max-width: 320px){
+        width: 40px;
+        height: 33px;
+        background: url("/assets/icons/paw_pink_small.svg");
+    }
 }
 .cctv__more{
-    color: #848484;
+    align-self: center;
     font-size: 14px;
     font-weight: 400;
     line-height: 140%;
-    @media screen  and (min-width: 321px){
+    margin: 10vw 0;
+    a{
+        text-decoration: none;
+        color: #848484;
+    }
+    @media screen  and (min-width: 481px){
     display: none;
+    }
+}
+.cctv__circle-hide{
+    @media screen  and (max-width: 480px){
+        display: none;
     }
 }
