@@ -48,7 +48,7 @@
     display: flex;
     align-items: center;
     border-radius: 50%;
-    background-color: $background-ellipse;
+    background-color: $background-beige;
     width: 140px;
     height: 140px;
     margin: 1vw 1.7vw 1vw 0;
@@ -74,4 +74,13 @@
     background: url("/assets/icons/paw_pink.svg");
     transform: rotate(-45deg);
     z-index: 2;
+}
+.cctv__more{
+    color: #848484;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 140%;
+    @media screen  and (min-width: 321px){
+    display: none;
+    }
 }
