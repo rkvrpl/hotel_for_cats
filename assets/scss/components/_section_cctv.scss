@@ -1,56 +1,86 @@
 .cctv {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
     @extend %font-family;
     font-size: 40px;
     font-weight: 600;
 }
 .cctv__header {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    margin: 4vw 0;
 }
 .cctv__title {
+    grid-area: 1/1/2/2;
     @extend %font-family-bold;
     font-size: 40px;
     font-weight: 600;
 }
 .cctv__header-paragraph {
+    grid-area: 1/2/2/3;
     max-width: 449px;
     font-size: 18px;
-    font-weight: 400;
+    font-weight: 300;
     line-height: 140%;
+    padding: 0 1vw;
 }
 .cctv__paragraph {
     max-width: 409px;
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 400;
     line-height: 150%; 
+    margin: 0px 6vw 6vw 0;
+    padding: 0 1vw;
 }
 .cctv__choice {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: flex-start;
     max-width: 1200px;
 
 }
 .cctv__circle {
+    position: relative;
+    display: flex;
+    align-items: center;
     border-radius: 50%;
-    background-color: $background-ellipse;
+    background-color: $background-beige;
     width: 140px;
     height: 140px;
-    flex-shrink: 0;
+    margin: 1vw 1.7vw 1vw 0;
 }
 .cctv__number {
     font-size: 40px;
     font-weight: 600;
     color: $text-color_number;
+    z-index:20;
+    margin: 0 auto;
 }
 .cctv__paw {
     position: absolute;
+    top: 90px; 
+    left: 82px;
     display: block;
     width: 70px;
     height: 57px;
+    z-index: 2;
     background: url("/assets/icons/paw.svg");
 }
 .cctv__paw:hover{
     background: url("/assets/icons/paw_pink.svg");
     transform: rotate(-45deg);
+    z-index: 2;
+}
+.cctv__more{
+    color: #848484;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 140%;
+    @media screen  and (min-width: 321px){
+    display: none;
+    }
 }

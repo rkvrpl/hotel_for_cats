@@ -1,12 +1,13 @@
 .footer {
     display: grid;
-    grid-template-columns: 530px 1fr;
+    grid-template-columns: 33vw 1fr;
     text-align: center;
     @extend %font-family;
     font-size: 13px;
     font-weight: 600;
     line-height: 100%;
-    max-width: 1600px;
+    margin: 25px auto 5px auto;
+    width: 100%;
     ul{
         list-style-type:  none;
     }
