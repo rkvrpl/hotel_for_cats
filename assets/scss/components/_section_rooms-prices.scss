@@ -1,4 +1,6 @@
 .rooms-prices {
+    padding: 0px;
+
     @media screen and (max-width: 320px) {}
 }
 
@@ -28,14 +30,83 @@
 }
 
 .card-body {
-    gap: 35px;
+    @extend %font-family;
     padding-left: 20px;
+    border: 1px solid #FAD2DF
 }
 
 .card-img-top {
-    width: 100%;
+    border-radius: 0px;
+    object-fit: cover;
 }
 
 .card {
-    width: 380px;
+    @extend %font-family;
+    width: 23.75em;
+    column-gap: 0.25rem;
+    margin: 1%;
+    border: 1px solid #FAD2DF
+}
+
+.card-group .h4 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.discount {
+    text-align: center;
+}
+
+.t-3 {
+    vertical-align: baseline;
+    @extend %font-family;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    /* 22px */
+    color: #242424;
+    margin-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 20px;
+}
+
+.t-2 {
+    vertical-align: baseline;
+    @extend %font-family;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    /* 22px */
+    color: #848484;
+    margin-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.t-1 {
+    vertical-align: bottom;
+    @extend %font-family;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    /* 30px */
+    color: #242424;
+
+}
+
+.h4 {
+    vertical-align: baseline;
+    @extend %font-family;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 140%;
+    /* 28px */
+    color: #F6A6BF;
+    margin-bottom: 35px;
+    padding-left: 20px;
+    padding-right: 20px px;
 }
