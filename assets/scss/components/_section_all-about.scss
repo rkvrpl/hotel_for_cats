@@ -1,62 +1,203 @@
-.all-about {
-    border: 1px solid blue;
-    max-width: 1600px;
-    max-height: 10898px;
-    width: 100%;
+.all-about-we-offer-wrap {
+    outline: 1px solid aqua;
+    max-width: 1247px;
+    max-height: 1214px;
     margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    @extend %font-family;
 }
 
-.all-about__top {
-    border: 1px solid red;
+.all-about__image {
+    position: relative;
+    bottom: 118%;
+    right: 5%;
+}
+
+.all-about {
+    grid-row: 1 / 2;
+    grid-column: span 3;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    outline: 1px solid red;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 90px 304px;
-    column-gap: 153px;
-    
+    grid-template-rows: 20% 80%;
+    column-gap: 1%;
+
 }
 
 .all-about__title {
-    grid-column: 1;
-}
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    @extend %font-family-bold;
+    font-size: 40px;
+    line-height: 140%;
+    }
 
 .all-about__title_small {
-    grid-column: 1;
-
+    grid-column: 1 /2;
+    grid-row: 2 / 3;
+    @extend %font-family-bold;
+    font-size: 20px;
 }
 
 .all-about__right-side {
     grid-row: 1 / 4;
-    grid-column: 2;
+    grid-column: 2 / 3;
+}
+
+.all-about__text_top {
+    grid-row: 1 / 2;
+    @extend %font-family-bold;
+    font-weight: 500;
+    line-height: 150%;
+    font-size: 20px; 
+}
+
+.all-about__text_bottom {
+    grid-row: 2 / 4;
+    @extend %font-family;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .we-offer {
-    border: 1px solid green;
-    display: grid;
-    grid-template-rows: 36px 1fr;
-    grid-template-columns: 1fr 1fr;
-    max-width: 1600px;
+    outline: 1px solid green;
+    grid-row: 2 / 3;
+    grid-column: span 3;
+    // max-height: 627px;
     width: 100%;
+    max-height: 50%;
+    display: grid;
+    grid-template-rows: 36px 627px;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 1%; 
+
+}
+
+.we-offer__image {
+    position: relative;
+    bottom: 140%;
+    left: 90%;
+    z-index: -1;
 }
 
 .we-offer__title {
     grid-row: 1 / 2;
     grid-column: span 3;
+    @extend %font-family-bold;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+
 }
 
 .we-offer__list {
+    outline: 1px solid pink;
     grid-row: 2 / 3;
-    max-height: 5449px;
+    grid-column: span 3;
+    align-items: center;
+    justify-content: start;
     display: grid;
+    grid-template-columns: 6% 40% 6% 6% 40%;   
+    width: 100%;
+    @extend %font-family;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
 }
 
-.we-offer__list_item-left {
+.we-offer__cat {
     grid-column: 1 / 2;
-    
 }
 
-.we-offer__list_item-right {
+.we-offer__cat_item6 {
+    grid-column: 4/5;
+    grid-row: 1 / 2;
+}
+
+.we-offer__cat_item7 {
+    grid-column: 4/5;
+    grid-row: 2/3;
+}
+
+.we-offer__cat_item8 {
+    grid-column: 4/5;
+    grid-row: 3/4;
+}
+
+.we-offer__cat_item9 {
+    grid-column: 4/5;
+    grid-row: 4/5;
+}
+
+.we-offer {
+    ul {
+        list-style-type: none;
+        }
+}
+
+.we-offer__list_item1 {
     grid-column: 2 / 3;
-    
+    grid-row: 1 / 2;
+}
+
+.we-offer__list_item2 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.we-offer__list_item3 {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+}
+
+.we-offer__list_item4 {
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+}
+
+.we-offer__list_item5 {
+    grid-column: 2 / 3;
+    grid-row: 5 / 6;
+}
+
+.we-offer__list_item-extra {
+    grid-column: 2 / 3;
+    grid-row: 6/7;
+    // display: grid;
+    position: relative;
+    bottom: 40%;
+    div {
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%;
+color: #848484;
+
+    }
+}
+
+.we-offer__list_item6 {
+    grid-column: 5 / 6;
+    grid-row: 1 / 2;
+}
+
+.we-offer__list_item7 {
+    grid-column: 5 / 6;
+    grid-row: 2 / 3;
+}
+
+.we-offer__list_item8 {
+    grid-column: 5 / 6;
+    grid-row: 3 / 4;
+}
+
+.we-offer__list_item9 {
+    grid-column: 5 / 6;
+    grid-row: 4 / 5;
 }
