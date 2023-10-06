@@ -1,11 +1,10 @@
 .rooms-prices {
-    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
 
     @media screen and (max-width: 320px) {}
-}
-
-.rooms-prices__title {
-    @extend %font-family-bold;
 }
 
 .btn {
@@ -111,16 +110,22 @@
     padding-right: 20px px;
 }
 
+.rooms-prices__title {
+    @extend %font-family-bold;
+    margin-top: 95px;
+}
+
 .discount {
     background: url(/assets/icons/icon-discount.svg) no-repeat 0 0;
-    width: 305px;
-    height: 205px;
-    font-family: Montserrat;
+    width: 283px;
+    height: 206px;
+    @extend %font-family;
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
     line-height: 140%;
     color: #242424;
     padding: 50px 50px 0 0px;
-    margin-right: 272px;
+    text-align: center;
+    text-justify: center;
 }
