@@ -1,0 +1,41 @@
+.rooms-prices {
+    @media screen and (max-width: 320px) {}
+}
+
+.rooms-prices__title {
+    @extend %font-family-bold;
+}
+
+.btn {
+    display: inline-flex;
+    @extend %button-big;
+    background-color: #F6A6BF;
+    border-radius: 100px;
+    align-items: center;
+    justify-content: center;
+    @extend %font-family;
+    color: #fff;
+    font-size: 1.25em;
+    text-decoration: none;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #fff;
+    border-color: #F6A6BF;
+    color: #F6A6BF;
+}
+
+.card-body {
+    gap: 35px;
+    padding-left: 20px;
+}
+
+.card-img-top {
+    width: 100%;
+}
+
+.card {
+    width: 380px;
+}
