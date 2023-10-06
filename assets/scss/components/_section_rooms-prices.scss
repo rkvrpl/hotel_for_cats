@@ -1,0 +1,21 @@
+.btn {
+    display: inline-flex;
+    background-color: #F6A6BF;
+    border-radius: 100px;
+    padding: 1rem 1.5rem;
+    width: 20.625em;
+    height: 4.375em;
+    align-items: center;
+    justify-content: center;
+    @extend %font-family;
+    color: #fff;
+    font-size: 1.25em;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+.btn:hover {
+    background-color: #fff;
+    border-color: #F6A6BF;
+    color: #F6A6BF;
+}

@@ -42,7 +42,7 @@
         <main>
             <!-- Начало блока Ники - Номера и цены-->
             <section>
-                Rooms and prices
+                <h2 class="rooms-prices__title">Номера и цены</h2>
                 <div class="card-group row row-cols-1 row-cols-md-3 g-3">
                     <div class="col p-3">
                         <div class="card h-100 text-center">
@@ -59,7 +59,7 @@
                                     <p class="card-text-3">38*32 см</p>
                             </div>
                             <div class="card-footer">
-                                <a href="#" class="btn btn-primary">Забронировать</a>
+                                <a class="btn" href="#" role="button">Забронировать</a>
                             </div>
                         </div>
                     </div>
@@ -76,7 +76,7 @@
                                     <p class="card-text-3">38*32 см</p>
                             </div>
                             <div class="card-footer">
-                                <a href="#" class="btn btn-primary">Забронировать</a>
+                                <a class="btn" href="#" role="button">Забронировать</a>
                             </div>
                         </div>
                     </div>
@@ -95,7 +95,7 @@
                                     <p class="card-text-3">38*32 см</p>
                             </div>
                             <div class="card-footer">
-                                <a href="#" class="btn btn-primary">Забронировать</a>
+                                <a class="btn" href="#" role="button">Забронировать</a>
                             </div>
                         </div>
                     </div>
@@ -103,9 +103,9 @@
             </section>
             <!-- конец блока Ники - Номера и цены -->
             <!-- Начало блока Ники - Фотогалерея-->
-            <section>
-                <div class="photogallery">
-                    <h1>Фотогалерея</h1>
+            <section class="photogallery">
+                <h2 class="photogallery__title">Фотогалерея</h2>
+                <div class="photogallery__block">
                     <figure class="photogallery__img-room-big">
                         <img src="./assets/imgs/room-big.jpg" alt="Большая комната" width="" />
                     </figure>
@@ -115,12 +115,11 @@
                     <figure class="photogallery__img-room">
                         <img src="./assets/imgs/room.jpg" alt="Комната" width="" />
                     </figure>
-                </div>
-                <div class="photogallery__number">1 / 11</div>
-                <div class="photogallery__arrows">
-                    <img class="photogallery__arrow-back" src="./assets/icons/arrow_back.svg" />
-                    <img class="photogallery__arrow-forward" src="./assets/icons/arrow_forward.svg" />
-                </div>
+                    <p class="photogallery__number">1 / 11</p>
+                    <div class="photogallery__arrows">
+                        <img class="photogallery__arrow-back" src="./assets/icons/arrow_back.svg" />
+                        <img class="photogallery__arrow-forward" src="./assets/icons/arrow_forward.svg" />
+                    </div>
                 </div>
             </section>
             <!-- конец блока Ники - Фотогалерея -->
@@ -128,7 +127,8 @@
             <section class="cctv">
                 <div class="cctv__header">
                     <h2 class="cctv__title">Видеонаблюдение</h2>
-                    <p class="cctv__header-paragraph">Чтобы увидеть вашего кота или кошку нужно войти под логином и паролем, которые вам выдали при заселении</p>
+                    <p class="cctv__header-paragraph">Чтобы увидеть вашего кота или кошку нужно войти под логином и
+                        паролем, которые вам выдали при заселении</p>
                 </div>
                 <div class="cctv__choice">
                     <p class="cctv__paragraph">Выберите номер комнаты вашего котика и посмотрите, чем он сейчас занят
