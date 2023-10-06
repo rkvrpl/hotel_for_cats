@@ -1,27 +1,33 @@
-%font-family{
+%font-family {
     font-family: 'Montserrat', sans-serif; //шрифт текста
 
 }
-%font-family-bold{
+
+%font-family-bold {
     font-family: 'Montserrat', sans-serif; //жирный шрифт текста
     font-weight: bold;
 }
-%button{                               //стилизация кнопки
+
+%button {
+    //стилизация кнопки
     border-radius: 100px;
     background: var(--, #F6A6BF);
 }
-%button-small{
-    width: 220px;                    //маленькие кнопки
+
+%button-small {
+    width: 220px; //маленькие кнопки
     height: 60px;
     flex-shrink: 0;
 }
-%button-big{
+
+%button-big {
     width: 330px;
-    height: 70px;                   //большие кнопки
+    height: 70px; //большие кнопки
     flex-shrink: 0;
 }
 
 /*пример вызова: 
 .container {
     @extend %font-family-bold;
+    @extend %button;
 }*/
