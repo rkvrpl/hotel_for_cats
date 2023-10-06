@@ -1,3 +1,7 @@
+.photogallery {
+    @media screen and (max-width: 320px) {}
+}
+
 .photogallery__block {
     display: grid;
     grid-template-columns: 480px 330px 330px;
@@ -6,10 +10,7 @@
     margin: auto;
     width: 75rem;
 
-    @media screen and (max-width: 320px) {
-        display: block;
-        max-width: 320px;
-    }
+    @media screen and (max-width: 320px) {}
 
     .photogallery__img-room-big {
         grid-row: span 3;
