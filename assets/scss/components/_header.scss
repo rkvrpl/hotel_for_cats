@@ -1,44 +1,337 @@
-.container{
+/*{
+    outline:1px solid red;
+}*/
+.container {
     max-width:1600px;
-    margin: 0 auto;
+    // margin: 0 auto;
     @extend %font-family;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
+    margin-top: 1.8em;
 }
+
 .header__logo {
-    // display: flex;
-    // flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
-.header__logo-img {
-    width: 187px;
-    height: 36px;
+.header__img {
+    max-width: 100%;
 }
+
 .header__logo-text {
     color: #F6A6BF;
-    font-size:1em;
+    font-size: 1em;
 }
-.header__info-data {
-    // display: flex;
-    // flex-flow: row nowrap;
-    // justify-content: space-around;
-    // gap:2.3em;
+.header__info-data{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+    gap:2.3em;
 }
-.header__info-data_text {
+.header__block{
+    display: flex;
+    padding-left: 0%;
+}
+.header__text {
     font-size: 0.8em;
     @extend %font-family-bold;
 }
-.header__info-data_geo-location,.header__info-data_clock ,.header__info-data_call,.header__info-data_insta-img {
-    width: 25px;
-    height: 25px;
+.header__geo-location,.header__clock ,.header__call,.header__insta-img {
+    max-width: 100%;
 }
-.header__info-data-btn_insta{
-    // @extend %button;
-    display: inline-block;
+.header__btn-insta{
+    display: flex;
+    align-items: center;
     color: #fff;
-    font-size: 1.1em;
+    font-size: 1em;
     background-color: #F6A6BF;
     text-decoration: none;
-    border-radius: 100px;
-    padding:1rem 1.5rem;
+    border-radius: 6.25em;
+    padding:0.8em;
+    border:1px solid #F6A6BF;
+}
+.header__btn-insta:hover{
+    background-color: #fff;
+    color:#F6A6BF;
+}
+
+.header__btn-insta:active{
+    color:#7BCBE2;
+}
+// Стили для блока-№2 
+.second-header{
+    margin-top: 1.4em;
+}
+.container-2{
+    max-width:1600px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.second-header__img-block {
+    position: relative;
+}
+.image {
+    display: block;
+    max-width:100%;
+}
+.link-1 {
+    position: absolute;
+    top: 11.25em;
+    left: 1.8em;
+    width: 3.1em; /* ширина ссылки */
+    height: 3.1em; /* высота ссылки */
+    border-radius:100%;
+}
+.link-2{
+    position: absolute;
+    width: 3.1em; /* ширина ссылки */
+    height: 3.1em; /* высота ссылки */
+    border-radius:100%;
+    left:5.6em;
+    top:3.75em;
+}
+.link-3{
+    position: absolute;
+    width: 3.1em; /* ширина ссылки */
+    height: 3.1em; /* высота ссылки */
+    border-radius:100%;
+    left:12.8em;
+    top:2.5em;
+}
+.link-4{
+    position: absolute;
+    width: 3.1em; /* ширина ссылки */
+    height: 3.1em; /* высота ссылки */
+    border-radius:100%;
+    left:18.7em;
+    top:8.1em;
+}
+.link-5{
+    position: absolute;
+    width: 6em; /* ширина ссылки */
+    height: 6em; /* высота ссылки */
+    border-radius:100%;
+    left:10em;
+    top:14em;
+}
+.img-2{
+    margin-top:-5em;
+    max-width: 100%;
+}
+.second-header__wrap-block{
+    position:relative;
+}
+.h1{
+    font-size:3em;
+}
+.text{
+    font-size:1.1em;
+}
+.user-form{
+    display:flex;
+    flex-direction:column;
+    max-width:100%;
+    @extend %font-family; 
+    position: absolute;
+    bottom:10em;
+}
+.input[type="text"], input[type="tel"] {
+    border: none;
+    border-bottom: 2px solid #848484;
+    width: 14.3em;
+    margin-top:1.5em;
+}
+.btn-send{
+    @extend %button-small; 
+    background-color: #F6A6BF;
+    color:#fff;
+    border-radius: 6.25em;
+    padding:0.8em;
+    border:1px solid #F6A6BF;
+    margin-top:1.5em;
+    font-size:1.1em;
+}
+.btn-send:hover{
+    background-color: #fff;
+    color:#F6A6BF;
+}
+.btn-send:active{
+    color:#7BCBE2;
+}
+.img-cats{
+    max-width:100%;
+}
+.second-header__small-img-block{
+    max-width:1600px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    // position: relative;
+}
+.paw-in-heart{
+    width:2.8em;
+    height:2.8em;
+}
+.second-header__block{
+    display: flex;
+    align-items: center;
+}
+// Все медиазапросы
+// Блок-2
+@media (max-width:1270px){
+    .container-2{
+        justify-content: space-between;
+        max-width:90em;
+        gap: 5em;
+    }
+    .h1{
+        font-size: 2.5em;
+    }
+}
+@media (max-width:1220px){
+    .h1{
+        font-size: 2em;
+    }
+    .link-1 {
+        top: 9.25em;
+        left: 0.7em;
+    }
+    .link-2{
+        left:4em;
+        top:2.75em;
+    }
+    .link-3{
+        left:10.8em;
+        top:1.5em;
+    }
+    .link-4{
+        left:16em;
+        top:7.1em;
+    }
+    .link-5{
+        left:9em;
+        top:12em;
+    }
+    .link-1,.link-2,.link-3,.link-4 {
+        width: 4em;
+        height: 4em;
+    }
+    .user-form{
+        bottom:9.8em;
+    }
+}
+@media (max-width:1100px){
+    .link-1 {
+        top: 8.25em;
+        left: -0.3em;
+    }
+    .link-2{
+        left:3em;
+        top:1.75em;
+    }
+    .link-3{
+        left:9.8em;
+        top:0.5em;
+    }
+    .link-4{
+        left:15em;
+        top:5.1em;
+    }
+    .link-5{
+        left:7em;
+        top:11em;
+    }
+    input[type="text"], input[type="tel"] {
+        width: 13em;
+        margin-top:1.2em;
+    }
+    .user-form{
+        bottom:8.7em;
+    }
+    .btn-send{
+        width:12.5em;
+        height:2.5em;
+        margin-top:1em;
+        font-size:1em;
+    }
+}
+@media (max-width:1150px) {
+    .container,.second-header__small-img-block{
+        justify-content: space-between;
+    }
+    .header__info-data{
+        gap: 1.2em ;
+    }
+    .header__text {
+        font-size: 0.6em;
+    }
+    .header__btn-insta{
+        font-size: 0.8em;
+        border-radius: 5em;
+    }
+}
+@media (max-width:1000px){
+    .link-1 {
+        top: 7.25em;
+    }
+    .link-2{
+        top:0.75em;
+    }
+    .link-3{
+        left:8.8em;
+    }
+    .link-4{
+        left:13em;
+    }
+    .link-5{
+        top:8em;
+    }
+    .img-2{
+        margin-top: -2.7em;
+        max-width:60%;
+    }
+    input[type="text"], input[type="tel"] {
+        width: 11em;
+        margin-top:1.2em;
+    }
+    .btn-send{
+        width:11em;
+        margin-top:0.6em;
+    }
+}
+@media (max-width:900px){
+    .img-2{
+        display: none;
+    }
+}
+@media (max-width:820px){
+    .container{
+        flex-direction: column;
+        padding: 0;
+    }
+}
+@media (max-width:600px){
+    .header__info-data{
+        flex-direction: column;
+        justify-content: center;
+        gap: 1em;
+    }
+    .header__block{
+        flex-direction: column;
+        align-items: center;
+    }
+    .header__geo-location,.header__clock ,.header__call,.header__insta-img {
+        width: 22px;
+        height: 22px;
+    }
+    .header__text{
+        font-size: 0.8em;
+    }
+    .header__btn-insta{
+        font-size: 1em;
+    }
 }

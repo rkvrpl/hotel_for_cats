@@ -1,107 +1,148 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html lang="ru">
+    <head>
     <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no"/>
     <link href="./bootstrap/css/bootstrap-reboot.css" rel="stylesheet" />
     <link href="./bootstrap/css/bootstrap.css" rel="stylesheet" />
     <link rel="stylesheet" href="./assets/style/style.css" />
-    <link
-      rel="shortcut icon"
-      href="assets/icons/paw_favicon.svg"
-      type="image/svg"
-    />
-
+    <link rel="shortcut icon" href="assets/icons/paw_favicon.svg"type="image/svg"/>
     <title>Котико</title>
-  </head>
-
     <body>
         <!-- Блок Алисы начало-->
-        <header>
+        <header class="header">
             <div class="container">
                 <div class="header__logo">
-                    <img src="assets/icons/logo_header.svg" alt="logo" class="header__logo-img">
+                    <img src="assets/icons/logo_header.svg" alt="logo" class="header__img">
                     <div class="header__logo-text">отель для котиков</div>
                 </div>
                     <div class="header__info-data">
+                        <div class="header__block">
                         <img src="assets/icons/header_geo-location-outline.svg" alt="geo-location"
-                            class="header__info-data_geo-location">
-                        <div class="header__info-data_text">г. Санкт-Петербург ул. Ключевая, дом 32 </div>
+                            class="header__geo-location">
+                        <div class="header__text">г. Санкт-Петербург ул. Ключевая, дом 32 </div>
+                    </div>
+                    <div class="header__block">
                         <img src="assets/icons/header_clock-circle-outlined.svg" alt="clock-circle"
-                            class="header__info-data_clock">
-                        <div class="header__info-data_text">Круглосуточно</div>
+                            class="header__clock">
+                        <div class="header__text">Круглосуточно</div>
+                    </div>
+                    <div class="header__block">
                         <img src="assets/icons/header_fluent_call-connecting-20-regular.svg" alt="call-connecting"
-                            class="header__info-data_call">
-                        <div class="header__info-data_text">+7 (905) 230-55-99</div>
-                        <a href="#" class="header__info-data-btn_insta">
+                            class="header__call">
+                        <div class="header__text">+7 (905) 230-55-99</div>
+                    </div>
+                        <a href="#" class="header__btn-insta">
                             <img src="assets/icons/header_ant-design_instagram-outlined.svg" alt="insta"
-                                class="header__info-data_insta-img">
+                                class="header__insta-img">
                             kotikozoohotel
                         </a>
                     </div>
                 </div>
+            </div>
         </header>
-        <!-- Блок Алисы конец-->
+        <header class="second-header">
+            <div class="container-2">
+                <div class="second-header__img-block">
+                    <a href="#" class="link-1"></a>
+                    <a href="#"class="link-2"></a>
+                    <a href="#"class="link-3"></a>
+                    <a href="#"class="link-4"></a>
+                    <a href="#"class="link-5"></a>
+                    <img src="./assets/imgs/header2_paw.png" alt="paw-cat" class="image">
+                    <img src="./assets/imgs/header2_emblem-guarantee.png" alt="Emblem guarantee" class="img-2">
+                    </div>
+                <div class="second-header__wrap-block">
+                    <h1 class="h1">Гостиница для кошек <br> с видеонаблюдением</h1>
+                        <p class="text">Будьте спокойны за вашего питомца, пока вы в отъезде</p>
+                        <form action="#" id="user-form" class="user-form">
+                            <input placeholder="Имя" type="text" id="name" class="name" value="" required/>
+                            <input placeholder="Телефон" type="tel" id="phoneNumber" name="phoneNumber" value="" required/>
+                            <button type="submit"class="btn-send">Отправить заявку</button>
+                        </form>
+                        <img src="./assets/imgs/header2_cats.png" alt="cats" class="img-cats">
+                </div>
+            </div>
+                <div class="second-header__small-img-block">
+                <div class="second-header__block">
+                    <img src="./assets/icons/header2_paw-heart-small.svg" alt="paw-in-heart" class="paw-in-heart">
+                    <p>видеонаблюдение в режиме <br> 24/7 и ежедневный фото/<br>видеоотчет в мессенджеры</p>
+                </div>
+                <div class="second-header__block">
+                    <img src="./assets/icons/header2_paw-heart-small.svg" alt="paw-in-heart" class="paw-in-heart">
+                    <p>просторные номера <br> с окнами</p>
+                </div>
+                <div  class="second-header__block">
+                    <img src="./assets/icons/header2_paw-heart-small.svg" alt="paw-in-heart" class="paw-in-heart">
+                    <p>круглосуточное присутствие <br> котоняни</p>
+                </div>
+            </div>
+            </header>
+        <!-- Блок--№2 Алисы конец-->
         <main>
             <!-- Начало блока Ники - Номера и цены-->
-            <section>
-                Rooms and prices
-                <div class="card-group row row-cols-1 row-cols-md-3 g-3">
+            <section class="rooms-prices">
+                <div class="rooms-prices__head">
+                    <h2 class="rooms-prices__title">Номера и цены</h2>
+                    <div class="discount"> Скидка 20% до <br> конца ноября!</div>
+                </div>
+                <div class="card-group row row-cols-1 row-cols-xl-3">
                     <div class="col p-3">
-                        <div class="card h-100 text-center">
-                            <div class="card-img-top"><img src="./assets/imgs/room-standart.jpg" class="img-fluid"
-                                    alt="homecat-standart">
-                            </div>
-                            <div class="card-body hstack gap-3">
-                                <h4 class="card-title">Номер "СТАНДАРТ"</h3>
-                                    <p class="card-text-1">700 руб./сутки</p>
-                                    <p class="card-text-3">Размер номера</p>
-                                    <p class="card-text-3">1500*1500*2100 см</p>
-                                    <p class="card-text-3">Размер домиков</p>
-                                    <p class="card-text-3">32*32 см</p>
-                                    <p class="card-text-3">38*32 см</p>
-                            </div>
-                            <div class="card-footer">
-                                <a href="#" class="btn btn-primary">Забронировать</a>
+                        <div class="card">
+                            <img class="card-img-top" src="./assets/imgs/room-standart.jpg" alt="homecat-standart">
+                            <div class="card-body">
+                                <dl class="row">
+                                    <dt class="h4 col-sm-6">Номер <br> "СТАНДАРТ"</dt>
+                                    <dd class="t-1 col-sm-6">700 руб./сутки</dd>
+                                    <dt class="t-2 col-sm-6">Размер номера</dt>
+                                    <dd class="t-3 col-sm-6">1500*1500*2100 см</dd>
+                                    <dt class="t-2 col-sm-6">Размер домиков</dt>
+                                    <dd class="t-3 col-sm-6">
+                                        <p>32*32 см <br>
+                                            38*32 см</p>
+                                    </dd>
+                                </dl>
+                                <a class="btn" href="#" role="button">Забронировать</a>
                             </div>
                         </div>
                     </div>
                     <div class="col p-3">
-                        <div class="card h-100 text-center">
-                            <div class="card-img-top"><img src="./assets/imgs/room-standart+.jpg" class="img-fluid"
-                                    alt="homecat-standart+"></div>
-                            <div class="card-body text-center">
-                                <h4 class="card-title">Номер "СТАНДАРТ+"</h3>
-                                    <p class="card-text-1">800 руб./сутки</p>
-                                    <p class="card-text-3">Размер номера</p>
-                                    <p class="card-text-3">1200*2200*2100 см</p>
-                                    <p class="card-text-3">Размер домиков</p>
-                                    <p class="card-text-3">38*32 см</p>
-                            </div>
-                            <div class="card-footer">
-                                <a href="#" class="btn btn-primary">Забронировать</a>
+
+                        <div class="card">
+                            <img class="card-img-top" src="./assets/imgs/room-standart+.jpg" alt="homecat-standart+">
+                            <div class="card-body">
+                                <dl class="row">
+                                    <dt class="h4 col-sm-6">Номер <br> "СТАНДАРТ+"</dt>
+                                    <dd class="t-1 col-sm-6">800 руб./сутки</dd>
+                                    <dt class="t-2 col-sm-6">Размер номера</dt>
+                                    <dd class="t-3 col-sm-6">1200*2200*2100 см</dd>
+                                    <dt class="t-2 col-sm-6">Размер домиков</dt>
+                                    <dd class="t-3 col-sm-6">
+                                        <p>32*32 см <br>
+                                            38*32 см</p>
+                                    </dd>
+                                </dl>
+                                <a class="btn" href="#" role="button">Забронировать</a>
                             </div>
                         </div>
                     </div>
                     <div class="col p-3">
-                        <div class="card h-100 text-center">
-                            <div class="card-img-top"><img src="./assets/imgs/luxury-suite.jpg" class="img-fluid"
-                                    alt="homecat-luxury">
-                            </div>
-                            <div class="card-body text-center">
-                                <h4 class="card-title">Номер "ЛЮКС"</h3>
-                                    <p class="card-text-1">1000 руб./сутки</p>
-                                    <p class="card-text-3">Размер номера</p>
-                                    <p class="card-text-3">1200*3700*1500 см</p>
-                                    <p class="card-text-3">Размер домиков</p>
-                                    <p class="card-text-3">32*32 см</p>
-                                    <p class="card-text-3">38*32 см</p>
-                            </div>
-                            <div class="card-footer">
-                                <a href="#" class="btn btn-primary">Забронировать</a>
+
+                        <div class="card">
+                            <img class="card-img-top" src="./assets/imgs/luxury-suite.jpg" alt="homecat-luxury">
+                            <div class="card-body">
+                                <dl class="row">
+                                    <dt class="h4 col-sm-6">Номер <br> "ЛЮКС"</dt>
+                                    <dd class="t-1 col-sm-6">1000 руб./сутки</dd>
+                                    <dt class="t-2 col-sm-6">Размер номера</dt>
+                                    <dd class="t-3 col-sm-6">1200*3700*1500 см</dd>
+                                    <dt class="t-2 col-sm-6">Размер домиков</dt>
+                                    <dd class="t-3 col-sm-6">
+                                        <p>32*32 см <br>
+                                            38*32 см</p>
+                                    </dd>
+                                </dl>
+                                <a class="btn" href="#" role="button">Забронировать</a>
                             </div>
                         </div>
                     </div>
@@ -110,84 +151,230 @@
             <!-- конец блока Ники - Номера и цены -->
             <!-- Начало блока Ники - Фотогалерея-->
             <section>
-                Photogallery
+                <section class="photogallery">
+                    <h2 class="photogallery__title">Фотогалерея</h2>
+                    <div class="photogallery__block">
+                        <figure class="photogallery__img-room-big">
+                            <img src="./assets/imgs/room-big.jpg" alt="Большая комната" width="" />
+                        </figure>
+                        <figure class="photogallery__img-cat-paw">
+                            <img src="./assets/imgs/cat-paw.jpg" alt="Окошко лапка" width="" />
+                        </figure>
+                        <figure class="photogallery__img-room">
+                            <img src="./assets/imgs/room.jpg" alt="Комната" width="" />
+                        </figure>
+                        <p class="photogallery__number">1 / 11</p>
+                        <div class="photogallery__arrows">
+                            <div class="photogallery__arrow-back"></div>
+                            <div class="photogallery__arrow-forward"></div>
+                        </div>
+                    </div>
+                </section>
             </section>
             <!-- конец блока Ники - Фотогалерея -->
+            <!-- начало блоа Кении - Условия размещения и Заявка на бронирование -->
+            <section class="terms_of_placement">
+                <div class="terms_of_placement">
+                    <div class="fon_kitty">
+                        <img class="foot_print" src="assets/imeges/footprint.svg"/>
+                    </div>
+                    <div class="h1">
+                        <p>Условия размещения</p>
+                    </div>
+                    <div class="inprice">
+                        <div class="p1">В стоимость проживания включено</div>
+                    </div>
+                    <div class="list_inprice">
+                            <div class="list1">
+                                <li>наполнитель на выбор</li>
+                                <li>ежедневные игры и внимание</li>
+                                <li>ежедневный фото/видеоотчет</li>
+                                <li>лоток</li>
+                                <li>мисочки для корма и воды</li>
+                            </div>
+                    </div>
+                    <div class="recomm">
+                        <div class="p2">Рекомендации</div>
+                        <div class="text_recomm">
+                            Чтобы ускорить период адаптации котика к новым условиям возьмите с собой
+                        </div>
+                    </div>
+                    <div class="list_recomm">
+                        <div class="list2">
+                            <li>лежанку</li>
+                            <li>любимую игрушку</li>
+                            <li>вещь с Вашим запахом</li>
+                            <li>лоток</li>
+                            <li>немного наполнителя с его запахом</li>
+                        </div>
+                    </div>
+                    <div class="food">
+                        <div class="p3">Питание</div>
+                    </div>
+                    <div class="food_text">
+                        <div class="text1">
+                            Корм необходимо принести с собой из расчета периода нахождения котика в нашей гостинице, согласно индивидуальному плану кормления. 
+                        </div>
+                        <div class="text2"> 
+                            В случае, если корм закончится, по согласованию с Вами, мы купим корм. При выселении необходимо будет доплатить, согласно чеку за покупку.
+                        </div>
+                    </div>
+                    <div class="important">
+                        <div class="p1">ВАЖНОЕ !</div>
+                        <div class="list3">
+                            <li>Мы ежедневно наблюдаем за поведением и самочувствием Вашего котика!</li>
+                            <li>В случае любого отклонения от нормы, мы свяжемся с Вами!</li>
+                            <li>При необходимости и с Вашего согласия обратимся в ветеринарную клинику.</li>
+                            <li>При выселении необходимо будет доплатить за понесенные расходы, согласно чеку на оказание услуг.</li>
+                        </div>
+                    </div>
+                    <div class="picture-important">
+                        <img src="assets/imeges/Cat importent.svg"/>
+                    </div>
+                </div>
+                <div class="booking_request">
+                    <div class="h2">
+                        Заявка на бронирование
+                    </div>
+                    <div class="container">
+                        <div class="picture_reservation">
+                            <img class="kitty" src="assets/imeges/kitty2.svg"/>
+                            <div class="fon_reservation">
+                                <div class="foot_print1">
+                                    <img src="assets/imeges/footprint.svg"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reserv">
+                            <div class="cont_mane">
+                                    <label for="name">Имя</label>
+                                    <div>
+                                    <input type="text" id="name">
+                                    </div>
+                            </div>
+                            <div class="cont_checkin">
+                                <label for="checkin">Дата заезда</label>
+                                <div>
+                                <input type="text" id="phone">
+                                </div>
+                            </div>
+                            <div class="cont_phone">
+                                <label for="phone">Телефон</label>
+                                <div>
+                                    <input type="text" id="checkin">
+                                </div>
+                            </div>
+                            <div class="cont_checkout">
+                                <label for="checkout">Дата выезда</label>
+                                <div>
+                                    <input type="text" id="checkout">
+                                </div>
+                            </div>
+                            <div class="cont_petmane">
+                                <label for="petname">Кличка животного</label>
+                                <div>
+                                    <input type="text" id="petname">
+                                </div>
+                            </div>
+                            <div class="cont_type">
+                                <label for="type">Тип номера</label>
+                                <div>
+                                    <input type="text" id="type">
+                                </div>
+                            </div>
+                            <div class="cont_note">
+                                <label for="note">Примечание</label>
+                                <div>
+                                    <input class="input_note" type="text" id="note">
+                                </div>
+                            </div>
+                            <div class="cont_button">
+                                <button type="submit" class="reservation_button">
+                                Забронировать
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- конец блоа Кении - Условия размещения и Заявка на бронирование -->
             <!-- Блок Юлии начало -->
             <section class="cctv">
                 <div class="cctv__header">
                     <h2 class="cctv__title">Видеонаблюдение</h2>
-                    <p class="cctv__header-paragraph">Чтобы увидеть вашего кота или кошку нужно войти под логином и паролем, которые вам выдали при заселении</p>
+                    <p class="cctv__header-paragraph">Чтобы увидеть вашего кота или кошку нужно войти под логином и
+                        паролем, которые вам выдали при заселении</p>
                 </div>
                 <div class="cctv__choice">
-                    <p class="cctv__paragraph">Выберите номер комнаты вашего котика и посмотрите, чем он сейчас занят</p>
+                    <p class="cctv__paragraph">Выберите номер комнаты вашего котика и посмотрите, чем он сейчас занят
+                    </p>
                     <div class="cctv__circle">
                         <p class="cctv__number">1</p>
-                        <p ><a class="cctv__paw" href="#"></a></p>
+                        <p><a class="cctv__paw" href="#"></a></p>
                     </div>
                     <div class="cctv__circle">
                         <p class="cctv__number">2</p>
-                        <p ><a class="cctv__paw" href="#"></a></p>
+                        <p><a class="cctv__paw" href="#"></a></p>
                     </div>
                     <div class="cctv__circle">
                         <p class="cctv__number">3</p>
-                        <p ><a class="cctv__paw" href="#"></a></p>
+                        <p><a class="cctv__paw" href="#"></a></p>
                     </div>
                     <div class="cctv__circle">
                         <p class="cctv__number">4</p>
-                        <p ><a class="cctv__paw" href="#"></a></p>
+                        <p><a class="cctv__paw" href="#"></a></p>
                     </div>
                     <div class="cctv__circle">
                         <p class="cctv__number">5</p>
-                        <p ><a class="cctv__paw" href="#"></a></p>
+                        <p><a class="cctv__paw" href="#"></a></p>
                     </div>
                     <div class="cctv__circle">
                         <p class="cctv__number">6</p>
-                        <p ><a class="cctv__paw" href="#"></a></p>
+                        <p><a class="cctv__paw" href="#"></a></p>
                     </div>
                     <div class="cctv__circle">
                         <p class="cctv__number">7</p>
-                        <p ><a class="cctv__paw" href="#"></a></p>
+                        <p><a class="cctv__paw" href="#"></a></p>
                     </div>
                     <div class="cctv__circle">
                         <p class="cctv__number">8</p>
-                        <p ><a class="cctv__paw" href="#"></a></p>
+                        <p><a class="cctv__paw" href="#"></a></p>
                     </div>
                     <div class="cctv__circle">
                         <p class="cctv__number">9</p>
-                        <p ><a class="cctv__paw" href="#"></a></p>
+                        <p><a class="cctv__paw" href="#"></a></p>
                     </div>
                     <div class="cctv__circle">
                         <p class="cctv__number">10</p>
-                        <p ><a class="cctv__paw" href="#"></a></p>
+                        <p><a class="cctv__paw" href="#"></a></p>
                     </div>
                     <div class="cctv__circle">
                         <p class="cctv__number">11</p>
-                        <p ><a class="cctv__paw" href="#"></a></p>
+                        <p><a class="cctv__paw" href="#"></a></p>
                     </div>
                     <div class="cctv__circle">
                         <p class="cctv__number">12</p>
-                        <p ><a class="cctv__paw" href="#"></a></p>
+                        <p><a class="cctv__paw" href="#"></a></p>
                     </div>
                     <div class="cctv__circle">
                         <p class="cctv__number">13</p>
-                        <p ><a class="cctv__paw" href="#"></a></p>
+                        <p><a class="cctv__paw" href="#"></a></p>
                     </div>
                     <div class="cctv__circle">
                         <p class="cctv__number">14</p>
-                        <p ><a class="cctv__paw" href="#"></a></p>
+                        <p><a class="cctv__paw" href="#"></a></p>
                     </div>
                     <div class="cctv__circle">
                         <p class="cctv__number">15</p>
-                        <p ><a class="cctv__paw" href="#"></a></p>
+                        <p><a class="cctv__paw" href="#"></a></p>
                     </div>
                     <div class="cctv__circle">
                         <p class="cctv__number">16</p>
-                        <p ><a class="cctv__paw" href="#"></a></p>
+                        <p><a class="cctv__paw" href="#"></a></p>
                     </div>
                     <div class="cctv__circle">
                         <p class="cctv__number">17</p>
-                        <p ><a class="cctv__paw" href="#"></a></p>
+                        <p><a class="cctv__paw" href="#"></a></p>
                     </div>
                 </div>
             </section>
@@ -238,86 +425,77 @@
         </div>
         </section>
             <!-- конец блока Лены - Все о нас и Мы предлагаем -->
+            <!-- начло блока Ксениии - Важно -->
+            <section>
+                <div class="important">
+                        <div class="picture-important_2">
+                            <img src="assets/imeges/Cat importent_2.svg"/>
+                        </div>
+                        <div class="text-important_2">
+                            <div class="h3">ВАЖНО !</div>
+                            <div class="text"> 
+                                При необходимости медицинского наблюдения за больным котиком или после операции, для его безопасности, рекомендуем выбирать гостиницу при ветеринарной клинике, т.к. гостиница для кошек не является медицинским учреждением, а предоставляет услуги по временному содержанию животных.
+                            </div>
+                        </div>
+                </div>
+            </section>
+            <!-- конец блока Ксениии - Важно-->
+        
 
-      <!-- несколько блоков -->
+            <!-- Блок Юлии начало -->
+            <aside class="address">
+                <h2 class="address__title">Адрес и контакты</h2>
+                <div class="address__name">
+                    <p class="address__name-address">
+                        г. Санкт-Петербург ул. Ключевая, д.32
+                    </p>
+                    <a class="address__name-link" href="#">Скопировать адрес для навигатора</a>
+                </div>
+                <img class="address__map" src="assets/imgs/address_map.jpg" alt="address_map" />
+                <div class="address__route">
+                    <div class="address__how">
+                        <p class="address__comment_bold">Как пройти</p>
+                        <img class="address__img-paw" src="assets/icons/paw_white.svg" alt="paw_white" />
+                    </div>
+                    <div class="address__how">
+                        <img class="address__img" src="assets/imgs/address_building.jpg" alt="address_building" />
+                        <p class="address__comment">
+                            Мы находимся в здании многоуровневой парковки со стороны двора
+                        </p>
+                    </div>
+                    <div class="address__how">
+                        <img class="address__img" src="assets/imgs/address_entrance.jpg" alt="address_entrance" />
+                        <p class="address__comment">
+                            Вход со двора под вывеской "Вход" 5 этаж
+                        </p>
+                    </div>
+                    <div class="address__how">
+                        <img class="address__img" src="assets/imgs/address_trail.jpg" alt="address_trail" />
+                        <p class="address__comment">
+                            Если навигатор привел Вас со стороны бизнес центра к шлагбауму,
+                            можно пройти по тропинке направо
+                        </p>
+                    </div>
+                </div>
+            </aside>
+            <!-- Блок Юлии конец-->
+        </main>
+        <!-- Блок Юлии начало -->
+        <footer class="footer">
+            <p class="footer__paragraph">Copyright © 2021</p>
+            <ul class="footer__nav">
+                <li><a href="#">Номера и цены</a></li>
+                <li><a href="#">Заявка на бронирование</a></li>
+                <li><a href="#">Оплатить</a></li>
+                <li><a href="#">Видеонаблюдение</a></li>
+                <li><a href="#">Всё о нас</a></li>
+            </ul>
+        </footer>
+        <!-- Блок Юлии конец-->
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+            crossorigin="anonymous"></script>
+    </body>
 
-      <!-- Блок Юлии начало -->
-      <aside class="address">
-        <h2 class="address__title">Адрес и контакты</h2>
-        <div class="address__name">
-          <p class="address__name-address">
-            г. Санкт-Петербург ул. Ключевая, д.32
-          </p>
-          <a class="address__name-link" href="#"
-            >Скопировать адрес для навигатора</a
-          >
-        </div>
-        <img
-          class="address__map"
-          src="assets/imgs/address_map.jpg"
-          alt="address_map"
-        />
-        <div class="address__route">
-          <div class="address__how">
-            <p class="address__comment_bold">Как пройти</p>
-            <img
-              class="address__img-paw"
-              src="assets/icons/paw_white.svg"
-              alt="paw_white"
-            />
-          </div>
-          <div class="address__how">
-            <img
-              class="address__img"
-              src="assets/imgs/address_building.jpg"
-              alt="address_building"
-            />
-            <p class="address__comment">
-              Мы находимся в здании многоуровневой парковки со стороны двора
-            </p>
-          </div>
-          <div class="address__how">
-            <img
-              class="address__img"
-              src="assets/imgs/address_entrance.jpg"
-              alt="address_entrance"
-            />
-            <p class="address__comment">
-              Вход со двора под вывеской "Вход" 5 этаж
-            </p>
-          </div>
-          <div class="address__how">
-            <img
-              class="address__img"
-              src="assets/imgs/address_trail.jpg"
-              alt="address_trail"
-            />
-            <p class="address__comment">
-              Если навигатор привел Вас со стороны бизнес центра к шлагбауму,
-              можно пройти по тропинке направо
-            </p>
-          </div>
-        </div>
-      </aside>
-      <!-- Блок Юлии конец-->
-    </main>
-    <!-- Блок Юлии начало -->
-    <footer class="footer">
-      <p class="footer__paragraph">Copyright © 2021</p>
-      <ul class="footer__nav">
-        <li><a href="#">Номера и цены</a></li>
-        <li><a href="#">Заявка на бронирование</a></li>
-        <li><a href="#">Оплатить</a></li>
-        <li><a href="#">Видеонаблюдение</a></li>
-        <li><a href="#">Всё о нас</a></li>
-      </ul>
-    </footer>
-    <!-- Блок Юлии конец-->
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
-      crossorigin="anonymous"
-    ></script>
-  </body>
 </html>

@@ -1,5 +1,24 @@
 .photogallery {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+
     @media screen and (max-width: 320px) {}
+}
+
+.photogallery__title {
+    margin-bottom: 50px;
+    margin-top: 170px;
+    @extend %font-family-bold;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 140%;
+
+    @media screen and (max-width: 320px) {
+        font-size: 20px;
+        margin: 5vw 0 5vw 3vw;
+    }
 }
 
 .photogallery__block {
@@ -33,19 +52,55 @@
         padding: 0px;
         margin-bottom: 10px;
     }
-}
 
-.photogallery__title {
-    margin-left: 240px;
-    margin-bottom: 50px;
-    margin-top: 170px;
-    @extend %font-family-bold;
-    font-size: 40px;
-    font-weight: 600;
-    line-height: 140%;
+    .photogallery__arrow-back,
+    .photogallery__arrow-forward {
+        display: inline-flex;
+        position: relative;
+        width: 70px;
+        height: 70px;
+        background-color: #F6A6BF;
+        border-radius: 50%;
+        cursor: pointer;
+        left: 0px;
+        top: 0px;
+        border: 3px solid #F6A6BF;
+        ;
+    }
 
-    @media screen and (max-width: 320px) {
-        font-size: 20px;
-        margin: 5vw 0 5vw 3vw;
+    .photogallery__arrow-back::before,
+    .photogallery__arrow-forward::before {
+        position: absolute;
+        display: inline-flex;
+        width: 22px;
+        height: 22px;
+        content: "";
+    }
+
+    .photogallery__arrow-back::before {
+        top: 24px;
+        left: 26px;
+        border-top: 3px solid white;
+        border-left: 3px solid white;
+        transform: rotate(-45deg);
+    }
+
+    .photogallery__arrow-forward::before {
+        top: 24px;
+        left: 18px;
+        border-top: 3px solid white;
+        border-right: 3px solid white;
+        transform: rotate(45deg);
+    }
+
+    /* Иземнение фона и цвета при наведении*/
+    .photogallery__arrow-back:hover,
+    .photogallery__arrow-forward:hover {
+        background-color: white;
+    }
+
+    .photogallery__arrow-back:hover:before,
+    .photogallery__arrow-forward:hover:before {
+        border-color: pink;
     }
 }
