@@ -1,12 +1,7 @@
 .all-about-we-offer-wrap {
     outline: 1px solid aqua;
-<<<<<<< HEAD
-    max-width: 1247px;
-    //max-height: 1214px;
-=======
     max-width: 80vw;
     height: fit-content;
->>>>>>> 5ce732d38ce699dcf22be59ec4bedde175180b1e
     margin: 0 auto;
     display: grid;
     // grid-template-rows: 50% 1fr;
@@ -20,11 +15,7 @@
     grid-row: 1 / 2;
     grid-column: span 3;
     width: 100%;
-<<<<<<< HEAD
-    //height: 100%;
-=======
     height: fit-content;
->>>>>>> 5ce732d38ce699dcf22be59ec4bedde175180b1e
     justify-content: center;
     outline: 1px solid red;
     display: grid;
@@ -83,11 +74,7 @@
     grid-column: span 3;
     // max-height: 627px;
     width: 100%;
-<<<<<<< HEAD
-    //max-height: 50%;
-=======
     max-height: 100%;
->>>>>>> 5ce732d38ce699dcf22be59ec4bedde175180b1e
     display: grid;
     // grid-template-rows: 36px 627px;
     grid-template-columns: 1fr 1fr;
@@ -270,9 +257,6 @@
         top: 20%;
         left: 5%;
     }
-    .all-about__title {
-        // font-size: 30px;
-        }
     
     .all-about__title_small {
         font-size: 15px;
@@ -285,16 +269,6 @@
     .all-about__text_bottom {
         font-size: 12px;        
     }
-}
-
-.we-offer__title {
-    // font-size: 14px;
-
-}
-
-.we-offer__list {
-    // font-size: 8px;
-
 }
 
 @media screen and (max-width: 650px) {
