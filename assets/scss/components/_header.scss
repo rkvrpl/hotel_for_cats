@@ -139,7 +139,7 @@
     position: absolute;
     bottom:10em;
 }
-input[type=text], input[type="tel"] {
+.input[type="text"], input[type="tel"] {
     border: none;
     border-bottom: 2px solid #848484;
     width: 14.3em;
@@ -245,7 +245,7 @@ input[type=text], input[type="tel"] {
         left:7em;
         top:11em;
     }
-    input[type=text], input[type="tel"] {
+    input[type="text"], input[type="tel"] {
         width: 13em;
         margin-top:1.2em;
     }
@@ -294,13 +294,13 @@ input[type=text], input[type="tel"] {
         margin-top: -2.7em;
         max-width:60%;
     }
-    input[type=text], input[type="tel"] {
+    input[type="text"], input[type="tel"] {
         width: 11em;
         margin-top:1.2em;
     }
     .btn-send{
         width:11em;
-        margin-top:o.6em;
+        margin-top:0.6em;
     }
 }
 @media (max-width:900px){
