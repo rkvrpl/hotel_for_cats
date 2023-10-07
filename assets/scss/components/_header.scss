@@ -10,6 +10,7 @@
     align-items: center;
     margin-top: 1.8em;
 }
+
 .header__logo {
     display: flex;
     flex-direction: column;
@@ -18,9 +19,10 @@
 .header__img {
     max-width: 100%;
 }
+
 .header__logo-text {
     color: #F6A6BF;
-    font-size:1em;
+    font-size: 1em;
 }
 .header__info-data{
     display: flex;

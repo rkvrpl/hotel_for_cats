@@ -1,4 +1,9 @@
 .photogallery {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+
     @media screen and (max-width: 320px) {}
 }
 
@@ -36,7 +41,6 @@
 }
 
 .photogallery__title {
-    margin-left: 240px;
     margin-bottom: 50px;
     margin-top: 170px;
     @extend %font-family-bold;

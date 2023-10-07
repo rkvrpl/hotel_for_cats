@@ -15,8 +15,7 @@
       type="image/svg"
     />
 
-    <title>Котико</title>
-  </head>
+        <title>Котико</title>
 
     <body>
         <!-- Блок Алисы начало-->
@@ -94,61 +93,70 @@
         <!-- Блок--№2 Алисы конец-->
         <main>
             <!-- Начало блока Ники - Номера и цены-->
-            <section>
-                Rooms and prices
-                <div class="card-group row row-cols-1 row-cols-md-3 g-3">
+            <section class="rooms-prices">
+                <div class="rooms-prices__head">
+                    <h2 class="rooms-prices__title">Номера и цены</h2>
+                    <div class="discount"> Скидка 20% до <br> конца ноября!</div>
+                </div>
+                <div class="card-group row row-cols-1 row-cols-xl-3">
                     <div class="col p-3">
-                        <div class="card h-100 text-center">
-                            <div class="card-img-top"><img src="./assets/imgs/room-standart.jpg" class="img-fluid"
-                                    alt="homecat-standart">
-                            </div>
-                            <div class="card-body hstack gap-3">
-                                <h4 class="card-title">Номер "СТАНДАРТ"</h3>
-                                    <p class="card-text-1">700 руб./сутки</p>
-                                    <p class="card-text-3">Размер номера</p>
-                                    <p class="card-text-3">1500*1500*2100 см</p>
-                                    <p class="card-text-3">Размер домиков</p>
-                                    <p class="card-text-3">32*32 см</p>
-                                    <p class="card-text-3">38*32 см</p>
-                            </div>
-                            <div class="card-footer">
-                                <a href="#" class="btn btn-primary">Забронировать</a>
+
+
+                        <div class="card">
+                            <img class="card-img-top" src="./assets/imgs/room-standart.jpg" alt="homecat-standart">
+                            <div class="card-body">
+                                <dl class="row">
+                                    <dt class="h4 col-sm-6">Номер <br> "СТАНДАРТ"</dt>
+                                    <dd class="t-1 col-sm-6">700 руб./сутки</dd>
+                                    <dt class="t-2 col-sm-6">Размер номера</dt>
+                                    <dd class="t-3 col-sm-6">1500*1500*2100 см</dd>
+                                    <dt class="t-2 col-sm-6">Размер домиков</dt>
+                                    <dd class="t-3 col-sm-6">
+                                        <p>32*32 см <br>
+                                            38*32 см</p>
+                                    </dd>
+                                </dl>
+                                <a class="btn" href="#" role="button">Забронировать</a>
                             </div>
                         </div>
                     </div>
                     <div class="col p-3">
-                        <div class="card h-100 text-center">
-                            <div class="card-img-top"><img src="./assets/imgs/room-standart+.jpg" class="img-fluid"
-                                    alt="homecat-standart+"></div>
-                            <div class="card-body text-center">
-                                <h4 class="card-title">Номер "СТАНДАРТ+"</h3>
-                                    <p class="card-text-1">800 руб./сутки</p>
-                                    <p class="card-text-3">Размер номера</p>
-                                    <p class="card-text-3">1200*2200*2100 см</p>
-                                    <p class="card-text-3">Размер домиков</p>
-                                    <p class="card-text-3">38*32 см</p>
-                            </div>
-                            <div class="card-footer">
-                                <a href="#" class="btn btn-primary">Забронировать</a>
+
+                        <div class="card">
+                            <img class="card-img-top" src="./assets/imgs/room-standart+.jpg" alt="homecat-standart+">
+                            <div class="card-body">
+                                <dl class="row">
+                                    <dt class="h4 col-sm-6">Номер <br> "СТАНДАРТ+"</dt>
+                                    <dd class="t-1 col-sm-6">800 руб./сутки</dd>
+                                    <dt class="t-2 col-sm-6">Размер номера</dt>
+                                    <dd class="t-3 col-sm-6">1200*2200*2100 см</dd>
+                                    <dt class="t-2 col-sm-6">Размер домиков</dt>
+                                    <dd class="t-3 col-sm-6">
+                                        <p>32*32 см <br>
+                                            38*32 см</p>
+                                    </dd>
+                                </dl>
+                                <a class="btn" href="#" role="button">Забронировать</a>
                             </div>
                         </div>
                     </div>
                     <div class="col p-3">
-                        <div class="card h-100 text-center">
-                            <div class="card-img-top"><img src="./assets/imgs/luxury-suite.jpg" class="img-fluid"
-                                    alt="homecat-luxury">
-                            </div>
-                            <div class="card-body text-center">
-                                <h4 class="card-title">Номер "ЛЮКС"</h3>
-                                    <p class="card-text-1">1000 руб./сутки</p>
-                                    <p class="card-text-3">Размер номера</p>
-                                    <p class="card-text-3">1200*3700*1500 см</p>
-                                    <p class="card-text-3">Размер домиков</p>
-                                    <p class="card-text-3">32*32 см</p>
-                                    <p class="card-text-3">38*32 см</p>
-                            </div>
-                            <div class="card-footer">
-                                <a href="#" class="btn btn-primary">Забронировать</a>
+
+                        <div class="card">
+                            <img class="card-img-top" src="./assets/imgs/luxury-suite.jpg" alt="homecat-luxury">
+                            <div class="card-body">
+                                <dl class="row">
+                                    <dt class="h4 col-sm-6">Номер <br> "ЛЮКС"</dt>
+                                    <dd class="t-1 col-sm-6">1000 руб./сутки</dd>
+                                    <dt class="t-2 col-sm-6">Размер номера</dt>
+                                    <dd class="t-3 col-sm-6">1200*3700*1500 см</dd>
+                                    <dt class="t-2 col-sm-6">Размер домиков</dt>
+                                    <dd class="t-3 col-sm-6">
+                                        <p>32*32 см <br>
+                                            38*32 см</p>
+                                    </dd>
+                                </dl>
+                                <a class="btn" href="#" role="button">Забронировать</a>
                             </div>
                         </div>
                     </div>
@@ -157,84 +165,104 @@
             <!-- конец блока Ники - Номера и цены -->
             <!-- Начало блока Ники - Фотогалерея-->
             <section>
-                Photogallery
+                <section class="photogallery">
+                    <h2 class="photogallery__title">Фотогалерея</h2>
+                    <div class="photogallery__block">
+                        <figure class="photogallery__img-room-big">
+                            <img src="./assets/imgs/room-big.jpg" alt="Большая комната" width="" />
+                        </figure>
+                        <figure class="photogallery__img-cat-paw">
+                            <img src="./assets/imgs/cat-paw.jpg" alt="Окошко лапка" width="" />
+                        </figure>
+                        <figure class="photogallery__img-room">
+                            <img src="./assets/imgs/room.jpg" alt="Комната" width="" />
+                        </figure>
+                        <p class="photogallery__number">1 / 11</p>
+                        <div class="photogallery__arrows">
+                            <img class="photogallery__arrow-back" src="./assets/icons/arrow_back.svg" />
+                            <img class="photogallery__arrow-forward" src="./assets/icons/arrow_forward.svg" />
+                        </div>
+                    </div>
+                </section>
             </section>
             <!-- конец блока Ники - Фотогалерея -->
             <!-- Блок Юлии начало -->
             <section class="cctv">
                 <div class="cctv__header">
                     <h2 class="cctv__title">Видеонаблюдение</h2>
-                    <p class="cctv__header-paragraph">Чтобы увидеть вашего кота или кошку нужно войти под логином и паролем, которые вам выдали при заселении</p>
+                    <p class="cctv__header-paragraph">Чтобы увидеть вашего кота или кошку нужно войти под логином и
+                        паролем, которые вам выдали при заселении</p>
                 </div>
                 <div class="cctv__choice">
-                    <p class="cctv__paragraph">Выберите номер комнаты вашего котика и посмотрите, чем он сейчас занят</p>
+                    <p class="cctv__paragraph">Выберите номер комнаты вашего котика и посмотрите, чем он сейчас занят
+                    </p>
                     <div class="cctv__circle">
                         <p class="cctv__number">1</p>
-                        <p ><a class="cctv__paw" href="#"></a></p>
+                        <p><a class="cctv__paw" href="#"></a></p>
                     </div>
                     <div class="cctv__circle">
                         <p class="cctv__number">2</p>
-                        <p ><a class="cctv__paw" href="#"></a></p>
+                        <p><a class="cctv__paw" href="#"></a></p>
                     </div>
                     <div class="cctv__circle">
                         <p class="cctv__number">3</p>
-                        <p ><a class="cctv__paw" href="#"></a></p>
+                        <p><a class="cctv__paw" href="#"></a></p>
                     </div>
                     <div class="cctv__circle">
                         <p class="cctv__number">4</p>
-                        <p ><a class="cctv__paw" href="#"></a></p>
+                        <p><a class="cctv__paw" href="#"></a></p>
                     </div>
                     <div class="cctv__circle">
                         <p class="cctv__number">5</p>
-                        <p ><a class="cctv__paw" href="#"></a></p>
+                        <p><a class="cctv__paw" href="#"></a></p>
                     </div>
                     <div class="cctv__circle">
                         <p class="cctv__number">6</p>
-                        <p ><a class="cctv__paw" href="#"></a></p>
+                        <p><a class="cctv__paw" href="#"></a></p>
                     </div>
                     <div class="cctv__circle">
                         <p class="cctv__number">7</p>
-                        <p ><a class="cctv__paw" href="#"></a></p>
+                        <p><a class="cctv__paw" href="#"></a></p>
                     </div>
                     <div class="cctv__circle">
                         <p class="cctv__number">8</p>
-                        <p ><a class="cctv__paw" href="#"></a></p>
+                        <p><a class="cctv__paw" href="#"></a></p>
                     </div>
                     <div class="cctv__circle">
                         <p class="cctv__number">9</p>
-                        <p ><a class="cctv__paw" href="#"></a></p>
+                        <p><a class="cctv__paw" href="#"></a></p>
                     </div>
                     <div class="cctv__circle">
                         <p class="cctv__number">10</p>
-                        <p ><a class="cctv__paw" href="#"></a></p>
+                        <p><a class="cctv__paw" href="#"></a></p>
                     </div>
                     <div class="cctv__circle">
                         <p class="cctv__number">11</p>
-                        <p ><a class="cctv__paw" href="#"></a></p>
+                        <p><a class="cctv__paw" href="#"></a></p>
                     </div>
                     <div class="cctv__circle">
                         <p class="cctv__number">12</p>
-                        <p ><a class="cctv__paw" href="#"></a></p>
+                        <p><a class="cctv__paw" href="#"></a></p>
                     </div>
                     <div class="cctv__circle">
                         <p class="cctv__number">13</p>
-                        <p ><a class="cctv__paw" href="#"></a></p>
+                        <p><a class="cctv__paw" href="#"></a></p>
                     </div>
                     <div class="cctv__circle">
                         <p class="cctv__number">14</p>
-                        <p ><a class="cctv__paw" href="#"></a></p>
+                        <p><a class="cctv__paw" href="#"></a></p>
                     </div>
                     <div class="cctv__circle">
                         <p class="cctv__number">15</p>
-                        <p ><a class="cctv__paw" href="#"></a></p>
+                        <p><a class="cctv__paw" href="#"></a></p>
                     </div>
                     <div class="cctv__circle">
                         <p class="cctv__number">16</p>
-                        <p ><a class="cctv__paw" href="#"></a></p>
+                        <p><a class="cctv__paw" href="#"></a></p>
                     </div>
                     <div class="cctv__circle">
                         <p class="cctv__number">17</p>
-                        <p ><a class="cctv__paw" href="#"></a></p>
+                        <p><a class="cctv__paw" href="#"></a></p>
                     </div>
                 </div>
             </section>
@@ -244,130 +272,118 @@
 
                 <div class="all-about">
                     <img class="all-about__image" src="assets/icons/all-about_blob-cat.svg" alt="blob-cat">
-                <h2 class="all-about__title">Всё о нас</h2>
-                <h4 class="all-about__title_small">Где и с кем оставить своего котика <br> на время отпуска?</h4>
-                <article class="all-about__right-side">
-                <div class="all-about__text">
-                    <p class="all-about__text_top">Ценность нашей гостиницы в том, что вы можете полностью доверить нам заботу и уход за вашим котиком!</p>
-                <div class="all-about__text_bottom">
-                    <p>Многие из нас, планируя отпуск, или при необходимости уехать в командировку, или в период приезда гостей с аллергией и по другим причинам, сталкиваются с данным вопросом.</p>
-                <p>В маленьких городах этот вопрос решается благодаря помощи родственников и соседей, которые возьмут котика к себе или станут регулярно его навещать, чтобы покормить и уделить внимание.</p>
-                <p>В большом городе данная задача решается сложнее, т.к. из-за неблизких расстояний возникают неудобства ежедневно навещать Вашего котика. Данная ситуация негативно сказывается на режиме кормления и длительное отсутствие внимания является стрессом для животного.</p>
+                    <h2 class="all-about__title">Всё о нас</h2>
+                    <h4 class="all-about__title_small">Где и с кем оставить своего котика <br> на время отпуска?</h4>
+                    <article class="all-about__right-side">
+                        <div class="all-about__text">
+                            <p class="all-about__text_top">Ценность нашей гостиницы в том, что вы можете полностью
+                                доверить нам заботу и уход за вашим котиком!</p>
+                            <div class="all-about__text_bottom">
+                                <p>Многие из нас, планируя отпуск, или при необходимости уехать в командировку, или в
+                                    период приезда гостей с аллергией и по другим причинам, сталкиваются с данным
+                                    вопросом.</p>
+                                <p>В маленьких городах этот вопрос решается благодаря помощи родственников и соседей,
+                                    которые возьмут котика к себе или станут регулярно его навещать, чтобы покормить и
+                                    уделить внимание.</p>
+                                <p>В большом городе данная задача решается сложнее, т.к. из-за неблизких расстояний
+                                    возникают неудобства ежедневно навещать Вашего котика. Данная ситуация негативно
+                                    сказывается на режиме кормления и длительное отсутствие внимания является стрессом
+                                    для животного.</p>
+                            </div>
+                    </article>
                 </div>
-            </article>
-            </div>
-            <div class="we-offer">
-                <img class="we-offer__image" src="assets/icons/we-offer_paw.svg" alt="all-about_paw">
-                <h3 class="we-offer__title">Мы предлагаем</h3>
-                <ul class="we-offer__list">
-                    <li><img class="we-offer__cat" src="assets/icons/we-offer__cat.svg" alt="we-offer__cat"></li>
-                    <li class="we-offer__list_item1">гостиница оснащена приточно-вытяжной вентиляцией, с регулировкой температуры в летний и зимний период</li>
-                    <img class="we-offer__cat" src="assets/icons/we-offer__cat.svg" alt="we-offer__cat">
-                    <li class="we-offer__list_item2">соблюдение санитарно-гигиенических норм</li>
-                    <img class="we-offer__cat" src="assets/icons/we-offer__cat.svg" alt="we-offer__cat">
-                    <li class="we-offer__list_item3">круглосуточное присутствие котоняни</li>
-                    <img class="we-offer__cat" src="assets/icons/we-offer__cat.svg" alt="we-offer__cat">
-                    <li class="we-offer__list_item4">кормление и уход (индивидуальный подход к каждому котику)</li>
-                    <img class="we-offer__cat" src="assets/icons/we-offer__cat.svg" alt="we-offer__cat">
-                    <li class="we-offer__list_item5">индивидуальные номера
-                    </li>
-                    <li class="we-offer__list_item-extra">
-                        <div>10 номеров более 2 кв. м с окном <br>
-                        6 номеров более 2 кв. м без окна <br>
-                        1 номер более 3 кв.м с окнами</div></li>
-                    <img class="we-offer__cat_item6" src="assets/icons/we-offer__cat.svg" alt="we-offer__cat">
-                    <li class="we-offer__list_item6">подготовка номера к заселению нового постояльца (обработка поверхностей дезинфицирующими средствами, кварцевание)</li>
-                    <img class="we-offer__cat_item7" src="assets/icons/we-offer__cat.svg" alt="we-offer__cat">
-                    <li class="we-offer__list_item7">видеонаблюдение в режиме 24/7</li>
-                    <img class="we-offer__cat_item8" src="assets/icons/we-offer__cat.svg" alt="we-offer__cat">
-                    <li class="we-offer__list_item8">наличие холодильника для хранения влажного корма</li>
-                    <img class="we-offer__cat_item9" src="assets/icons/we-offer__cat.svg" alt="we-offer__cat">
-                    <li class="we-offer__list_item9">ежедневный фото/видеоотчет на мессенджеры</li>
-                </ul>
-            </div>
-        </div>
-        </section>
+                <div class="we-offer">
+                    <img class="we-offer__image" src="assets/icons/we-offer_paw.svg" alt="all-about_paw">
+                    <h3 class="we-offer__title">Мы предлагаем</h3>
+                    <ul class="we-offer__list">
+                        <li><img class="we-offer__cat" src="assets/icons/we-offer__cat.svg" alt="we-offer__cat"></li>
+                        <li class="we-offer__list_item1">гостиница оснащена приточно-вытяжной вентиляцией, с
+                            регулировкой температуры в летний и зимний период</li>
+                        <img class="we-offer__cat" src="assets/icons/we-offer__cat.svg" alt="we-offer__cat">
+                        <li class="we-offer__list_item2">соблюдение санитарно-гигиенических норм</li>
+                        <img class="we-offer__cat" src="assets/icons/we-offer__cat.svg" alt="we-offer__cat">
+                        <li class="we-offer__list_item3">круглосуточное присутствие котоняни</li>
+                        <img class="we-offer__cat" src="assets/icons/we-offer__cat.svg" alt="we-offer__cat">
+                        <li class="we-offer__list_item4">кормление и уход (индивидуальный подход к каждому котику)</li>
+                        <img class="we-offer__cat" src="assets/icons/we-offer__cat.svg" alt="we-offer__cat">
+                        <li class="we-offer__list_item5">индивидуальные номера
+                        </li>
+                        <li class="we-offer__list_item-extra">
+                            <div>10 номеров более 2 кв. м с окном <br>
+                                6 номеров более 2 кв. м без окна <br>
+                                1 номер более 3 кв.м с окнами</div>
+                        </li>
+                        <img class="we-offer__cat_item6" src="assets/icons/we-offer__cat.svg" alt="we-offer__cat">
+                        <li class="we-offer__list_item6">подготовка номера к заселению нового постояльца (обработка
+                            поверхностей дезинфицирующими средствами, кварцевание)</li>
+                        <img class="we-offer__cat_item7" src="assets/icons/we-offer__cat.svg" alt="we-offer__cat">
+                        <li class="we-offer__list_item7">видеонаблюдение в режиме 24/7</li>
+                        <img class="we-offer__cat_item8" src="assets/icons/we-offer__cat.svg" alt="we-offer__cat">
+                        <li class="we-offer__list_item8">наличие холодильника для хранения влажного корма</li>
+                        <img class="we-offer__cat_item9" src="assets/icons/we-offer__cat.svg" alt="we-offer__cat">
+                        <li class="we-offer__list_item9">ежедневный фото/видеоотчет на мессенджеры</li>
+                    </ul>
+                </div>
+                </div>
+            </section>
             <!-- конец блока Лены - Все о нас и Мы предлагаем -->
 
-      <!-- несколько блоков -->
+            <!-- несколько блоков -->
 
-      <!-- Блок Юлии начало -->
-      <aside class="address">
-        <h2 class="address__title">Адрес и контакты</h2>
-        <div class="address__name">
-          <p class="address__name-address">
-            г. Санкт-Петербург ул. Ключевая, д.32
-          </p>
-          <a class="address__name-link" href="#"
-            >Скопировать адрес для навигатора</a
-          >
-        </div>
-        <img
-          class="address__map"
-          src="assets/imgs/address_map.jpg"
-          alt="address_map"
-        />
-        <div class="address__route">
-          <div class="address__how">
-            <p class="address__comment_bold">Как пройти</p>
-            <img
-              class="address__img-paw"
-              src="assets/icons/paw_white.svg"
-              alt="paw_white"
-            />
-          </div>
-          <div class="address__how">
-            <img
-              class="address__img"
-              src="assets/imgs/address_building.jpg"
-              alt="address_building"
-            />
-            <p class="address__comment">
-              Мы находимся в здании многоуровневой парковки со стороны двора
-            </p>
-          </div>
-          <div class="address__how">
-            <img
-              class="address__img"
-              src="assets/imgs/address_entrance.jpg"
-              alt="address_entrance"
-            />
-            <p class="address__comment">
-              Вход со двора под вывеской "Вход" 5 этаж
-            </p>
-          </div>
-          <div class="address__how">
-            <img
-              class="address__img"
-              src="assets/imgs/address_trail.jpg"
-              alt="address_trail"
-            />
-            <p class="address__comment">
-              Если навигатор привел Вас со стороны бизнес центра к шлагбауму,
-              можно пройти по тропинке направо
-            </p>
-          </div>
-        </div>
-      </aside>
-      <!-- Блок Юлии конец-->
-    </main>
-    <!-- Блок Юлии начало -->
-    <footer class="footer">
-      <p class="footer__paragraph">Copyright © 2021</p>
-      <ul class="footer__nav">
-        <li><a href="#">Номера и цены</a></li>
-        <li><a href="#">Заявка на бронирование</a></li>
-        <li><a href="#">Оплатить</a></li>
-        <li><a href="#">Видеонаблюдение</a></li>
-        <li><a href="#">Всё о нас</a></li>
-      </ul>
-    </footer>
-    <!-- Блок Юлии конец-->
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+            <!-- Блок Юлии начало -->
+            <aside class="address">
+                <h2 class="address__title">Адрес и контакты</h2>
+                <div class="address__name">
+                    <p class="address__name-address">
+                        г. Санкт-Петербург ул. Ключевая, д.32
+                    </p>
+                    <a class="address__name-link" href="#">Скопировать адрес для навигатора</a>
+                </div>
+                <img class="address__map" src="assets/imgs/address_map.jpg" alt="address_map" />
+                <div class="address__route">
+                    <div class="address__how">
+                        <p class="address__comment_bold">Как пройти</p>
+                        <img class="address__img-paw" src="assets/icons/paw_white.svg" alt="paw_white" />
+                    </div>
+                    <div class="address__how">
+                        <img class="address__img" src="assets/imgs/address_building.jpg" alt="address_building" />
+                        <p class="address__comment">
+                            Мы находимся в здании многоуровневой парковки со стороны двора
+                        </p>
+                    </div>
+                    <div class="address__how">
+                        <img class="address__img" src="assets/imgs/address_entrance.jpg" alt="address_entrance" />
+                        <p class="address__comment">
+                            Вход со двора под вывеской "Вход" 5 этаж
+                        </p>
+                    </div>
+                    <div class="address__how">
+                        <img class="address__img" src="assets/imgs/address_trail.jpg" alt="address_trail" />
+                        <p class="address__comment">
+                            Если навигатор привел Вас со стороны бизнес центра к шлагбауму,
+                            можно пройти по тропинке направо
+                        </p>
+                    </div>
+                </div>
+            </aside>
+            <!-- Блок Юлии конец-->
+        </main>
+        <!-- Блок Юлии начало -->
+        <footer class="footer">
+            <p class="footer__paragraph">Copyright © 2021</p>
+            <ul class="footer__nav">
+                <li><a href="#">Номера и цены</a></li>
+                <li><a href="#">Заявка на бронирование</a></li>
+                <li><a href="#">Оплатить</a></li>
+                <li><a href="#">Видеонаблюдение</a></li>
+                <li><a href="#">Всё о нас</a></li>
+            </ul>
+        </footer>
+        <!-- Блок Юлии конец-->
+        <!-- Option 1: Bootstrap Bundle with Popper -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+            crossorigin="anonymous"></script>
+    </body>
+
 </html>
