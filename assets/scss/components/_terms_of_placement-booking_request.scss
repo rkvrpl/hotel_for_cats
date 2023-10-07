@@ -1,0 +1,253 @@
+section {
+    width: 100%;
+}
+.page_4 {
+    display: grid;
+    width: 1300px;
+    height: 1463px;
+    margin: 0px 197px 0px 103px;
+    grid-template-columns: 600px 600px;
+    grid-template-rows: repeat(4,250px) 1fr;
+    justify-content: end;
+    /* border: 1px solid blue; */
+}
+.fon_kitty {
+    position: absolute;
+    width: 627px; 
+    height: 595px;
+    z-index: -1;
+    background-image: url(../imeges/fon_print.svg)
+}
+.foot_print {
+    margin: 100.18px 167.11px 152.85px 105.51px;
+}
+.h1 {
+    grid-area: 1/1/2/3;
+    border-bottom: 3px solid #F6A6BF;
+}
+.inprice,
+.list_inprice,
+.recomm,
+.list_recomm,
+.food,
+.food_text {
+    border-bottom: 3px solid #F6A6BF;
+}
+li {
+    margin-right: 210px;
+    list-style-type: none;/*прячет разметку*/
+    margin-bottom: 15px;
+
+}
+li::before {
+    color: #F6A6BF;
+    content: "\25CF";
+    padding-right: 10px;
+}
+/* .important {
+    /*border-bottom: 3px solid red;*/
+    /*border: 1px solid red;
+    background-color: rgb(123, 123, 105);
+}*/
+/*.picture-important {
+    border: 1px solid red;
+    background-color: rgb(231, 231, 135);
+} */
+p {
+    font-size: 40px;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 122px 738px 70px 0;
+}
+.p1,
+.p2,
+.p3,
+.p4 {
+    margin-top: 30px;
+    font-family: Montserrat;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+}
+.list1,
+.list2,
+.list3 {
+    margin-top: 30px;
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+.text1,
+.text2 {
+    margin: 30px 150px 10px 50px;
+    color: var(--, #242424);
+    font-family: Montserrat;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+}
+.text_recomm {
+    width: 451.07px;
+    height: 59.99px;
+    margin-top: 30px;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.picture-important {
+    align-content: center;
+    justify-content: center;
+}
+.picture-important,
+.important {
+    width: 100%;
+}
+.page_5 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 1278px;
+    height: 694px;
+    margin: 140px 200px 0px 122px;
+    /* border: 1px solid blue; */
+}
+.h2 {
+    width: 540px;
+    height: 49px;
+    margin-left: 78px;
+    font-family: Montserrat;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 49px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.container {
+    display: flex;
+    flex-grow: 1;
+}
+.picture_reservation {
+    justify-self: flex-start;
+    align-self: flex-end;
+    width: 625px;
+    height: 595px;
+}
+.kitty {
+    position: absolute;
+    z-index: 1;
+    margin: 145px 217px 235.35px 132px;
+}
+.fon_reservation {
+    position: absolute;
+    width: 625px;
+    height: 595px;
+    z-index: -1;
+    background-image: url(../imeges/fon_print.svg);
+} 
+.foot_print1 {
+    margin: 170px 110px;
+}
+.reserv {
+    display: grid;
+    grid-template-columns: repeat(2,max-content);
+    grid-template-rows: repeat(5,max-content);
+    justify-content: center;
+    align-content: center;
+    margin: 20px 0px 21px 44px;
+    background-color: #FFFEF1;
+    align-self: end;
+    width: 609px;
+    height: 554px;
+    gap: 40px; 
+}
+/*.cont_mane,
+.cont_phone,
+.cont_checkin,
+.cont_checkout,
+.cont_petmane,
+.cont_type {
+    border: 1px solid black;
+}*/
+.cont_note {
+    grid-area: 4/1/5/3;
+}
+input {
+    border: none;
+    background-color: #FFFEF1;
+}
+.cont_button {
+    grid-area: 5/1/6/3;
+}
+.reservation_button {
+    width: 330px;
+    height: 70px;
+    border-radius: 100px;
+    border: none;
+    background-color: #F6A6BF;
+    color: white;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 28px;
+    letter-spacing: 0em;
+}
+.reservation_button:active {
+    background-color: rgb(235, 20, 88);
+}
+.input_note {
+    width: 450px;
+    min-height: max-content;
+}
+.page_8 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 1200px;
+    height: 585px;
+    margin: 90px 200px 0px 200px;
+    background-color: #FFFEF1;
+    /*border: 1px solid blue;*/
+}
+.picture-important_2 {
+    width: 530px;
+    height: 400px;
+}
+.text-important_2 {
+    margin-left: 70px;
+    width: 500px;
+    height: 400px;
+}
+.h3 {
+    width: 116px;
+    height: 36px;
+    margin-top: 100px;
+    font-family: Montserrat;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.text {
+    width: 472px;
+    height: 132px;
+    margin: 25px 150px 10px 0px;
+    color: var(--, #242424);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+}
