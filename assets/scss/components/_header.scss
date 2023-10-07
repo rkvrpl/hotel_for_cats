@@ -208,6 +208,8 @@ input[type=text], input[type="tel"] {
 .second-header__small-img-block{
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    // position: relative;
 }
 .paw-in-heart{
     width:2.8em;
@@ -217,3 +219,17 @@ input[type=text], input[type="tel"] {
     display: flex;
     align-items: center;
 }
+// .second-header__img-leaves{
+//     // position: relative;
+//     width:26.9em;
+//     // height: 24em;
+// }
+// .image-leaves{
+//     position:absolute;
+//     max-width: 100%;
+//     bottom:0;
+//     right:0;
+//     object-fit: cover;
+//     object-position: right bottom;
+//     // opacity:0.6;
+// }
