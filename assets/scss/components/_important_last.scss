@@ -1,4 +1,4 @@
-.important_2 {
+.important_last {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -18,7 +18,8 @@
     width: 500px;
     height: 400px;
 }
-.h3 {
+
+.h_3 {
     width: 116px;
     height: 36px;
     margin-top: 100px;
@@ -28,15 +29,16 @@
     line-height: 36px;
     letter-spacing: 0em;
     text-align: left;
-.text {
-    width: 472px;
-    height: 132px;
-    margin: 25px 150px 10px 0px;
-    color: var(--, #242424);
-    font-family: Montserrat;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 22px;
-    letter-spacing: 0em;
-    text-align: left;
+    .description {
+        width: 472px;
+        height: 132px;
+        margin: 25px 150px 10px 0px;
+        color: var(--, #242424);
+        font-family: Montserrat;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 22px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
 }

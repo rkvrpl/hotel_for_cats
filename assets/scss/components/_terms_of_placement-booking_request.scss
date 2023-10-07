@@ -43,7 +43,10 @@
     border-bottom: 3px solid #F6A6BF;
 }
 
-.title_cat {
+.title_inpice
+.recomendations
+.food_selection
+.title_attantion {
     margin-top: 30px;
     @extend %font-family-bold;
     font-size: 26px; 
@@ -59,23 +62,26 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 140%;
-    li {
+}
+
+ul>li {
         margin-right: 210px;
         list-style-type: none;/*прячет разметку*/
         margin-bottom: 15px;
-    }
-        li::before {
+}
+
+li::before {
             color: #F6A6BF;
             content: "\25CF"; /*розовая точка спецсимвол*/
             padding-right: 10px;
-    }
+        }
 
-.text1 {
-    margin: 30px 150px 10px 50px;
+.notices_1
+.notices_2 {
+    margin: 1rem 150px 0.5rem 50px;
     color: var(--, #242424);
     @extend %font-family;
     font-size: 18px;
-    font-style: normal;
     font-weight: 400;
     line-height: 140%;
 }
