@@ -61,48 +61,6 @@
 .header__btn-insta:active{
     color:#7BCBE2;
 }
-@media (max-width:1150px) {
-    .container{
-        justify-content: space-between;
-    }
-    .header__info-data{
-        gap: 1.2em ;
-    }
-    .header__text {
-        font-size: 0.6em;
-    }
-    .header__btn-insta{
-        font-size: 0.8em;
-        border-radius: 5em;
-    }
-}
-@media (max-width:820px){
-    .container{
-        flex-direction: column;
-        padding: 0;
-    }
-}
-@media (max-width:600px){
-    .header__info-data{
-        flex-direction: column;
-        justify-content: center;
-        gap: 1em;
-    }
-    .header__block{
-        flex-direction: column;
-        align-items: center;
-    }
-    .header__geo-location,.header__clock ,.header__call,.header__insta-img {
-        width: 22px;
-        height: 22px;
-    }
-    .header__text{
-        font-size: 0.8em;
-    }
-    .header__btn-insta{
-        font-size: 1em;
-    }
-}
 // Стили для блока-№2 
 .second-header{
     margin-top: 1.4em;
@@ -176,7 +134,7 @@
 .user-form{
     display:flex;
     flex-direction:column;
-    // max-width:100%;
+    max-width:100%;
     @extend %font-family; 
     position: absolute;
     bottom:10em;
@@ -208,6 +166,7 @@ input[type=text], input[type="tel"] {
     max-width:100%;
 }
 .second-header__small-img-block{
+    max-width:1600px;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -221,17 +180,158 @@ input[type=text], input[type="tel"] {
     display: flex;
     align-items: center;
 }
-// .second-header__img-leaves{
-//     // position: relative;
-//     width:26.9em;
-//     // height: 24em;
-// }
-// .image-leaves{
-//     position:absolute;
-//     max-width: 100%;
-//     bottom:0;
-//     right:0;
-//     object-fit: cover;
-//     object-position: right bottom;
-//     // opacity:0.6;
-// }
+// Все медиазапросы
+// Блок-2
+@media (max-width:1270px){
+    .container-2{
+        justify-content: space-between;
+        max-width:90em;
+        gap: 5em;
+    }
+    .h1{
+        font-size: 2.5em;
+    }
+}
+@media (max-width:1220px){
+    .h1{
+        font-size: 2em;
+    }
+    .link-1 {
+        top: 9.25em;
+        left: 0.7em;
+    }
+    .link-2{
+        left:4em;
+        top:2.75em;
+    }
+    .link-3{
+        left:10.8em;
+        top:1.5em;
+    }
+    .link-4{
+        left:16em;
+        top:7.1em;
+    }
+    .link-5{
+        left:9em;
+        top:12em;
+    }
+    .link-1,.link-2,.link-3,.link-4 {
+        width: 4em;
+        height: 4em;
+    }
+    .user-form{
+        bottom:9.8em;
+    }
+}
+@media (max-width:1100px){
+    .link-1 {
+        top: 8.25em;
+        left: -0.3em;
+    }
+    .link-2{
+        left:3em;
+        top:1.75em;
+    }
+    .link-3{
+        left:9.8em;
+        top:0.5em;
+    }
+    .link-4{
+        left:15em;
+        top:5.1em;
+    }
+    .link-5{
+        left:7em;
+        top:11em;
+    }
+    input[type=text], input[type="tel"] {
+        width: 13em;
+        margin-top:1.2em;
+    }
+    .user-form{
+        bottom:8.7em;
+    }
+    .btn-send{
+        width:12.5em;
+        height:2.5em;
+        margin-top:1em;
+        font-size:1em;
+    }
+}
+@media (max-width:1150px) {
+    .container,.second-header__small-img-block{
+        justify-content: space-between;
+    }
+    .header__info-data{
+        gap: 1.2em ;
+    }
+    .header__text {
+        font-size: 0.6em;
+    }
+    .header__btn-insta{
+        font-size: 0.8em;
+        border-radius: 5em;
+    }
+}
+@media (max-width:1000px){
+    .link-1 {
+        top: 7.25em;
+    }
+    .link-2{
+        top:0.75em;
+    }
+    .link-3{
+        left:8.8em;
+    }
+    .link-4{
+        left:13em;
+    }
+    .link-5{
+        top:8em;
+    }
+    .img-2{
+        margin-top: -2.7em;
+        max-width:60%;
+    }
+    input[type=text], input[type="tel"] {
+        width: 11em;
+        margin-top:1.2em;
+    }
+    .btn-send{
+        width:11em;
+        margin-top:o.6em;
+    }
+}
+@media (max-width:900px){
+    .img-2{
+        display: none;
+    }
+}
+@media (max-width:820px){
+    .container{
+        flex-direction: column;
+        padding: 0;
+    }
+}
+@media (max-width:600px){
+    .header__info-data{
+        flex-direction: column;
+        justify-content: center;
+        gap: 1em;
+    }
+    .header__block{
+        flex-direction: column;
+        align-items: center;
+    }
+    .header__geo-location,.header__clock ,.header__call,.header__insta-img {
+        width: 22px;
+        height: 22px;
+    }
+    .header__text{
+        font-size: 0.8em;
+    }
+    .header__btn-insta{
+        font-size: 1em;
+    }
+}
