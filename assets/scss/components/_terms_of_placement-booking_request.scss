@@ -1,7 +1,7 @@
 section {
     width: 100%;
 }
-.page_4 {
+.terms_of_placement {
     display: grid;
     width: 1300px;
     height: 1463px;
@@ -16,7 +16,7 @@ section {
     width: 627px; 
     height: 595px;
     z-index: -1;
-    background-image: url(../imeges/fon_print.svg)
+    background-image: url(/hotel_for_cats/assets/icons/fon_print.svg)
 }
 .foot_print {
     margin: 100.18px 167.11px 152.85px 105.51px;
@@ -24,35 +24,6 @@ section {
 .h1 {
     grid-area: 1/1/2/3;
     border-bottom: 3px solid #F6A6BF;
-}
-.inprice,
-.list_inprice,
-.recomm,
-.list_recomm,
-.food,
-.food_text {
-    border-bottom: 3px solid #F6A6BF;
-}
-li {
-    margin-right: 210px;
-    list-style-type: none;/*прячет разметку*/
-    margin-bottom: 15px;
-
-}
-li::before {
-    color: #F6A6BF;
-    content: "\25CF";
-    padding-right: 10px;
-}
-/* .important {
-    /*border-bottom: 3px solid red;*/
-    /*border: 1px solid red;
-    background-color: rgb(123, 123, 105);
-}*/
-/*.picture-important {
-    border: 1px solid red;
-    background-color: rgb(231, 231, 135);
-} */
 p {
     font-size: 40px;
     font-family: Montserrat;
@@ -69,7 +40,6 @@ p {
     margin-top: 30px;
     font-family: Montserrat;
     font-size: 26px;
-    font-style: normal;
     font-weight: 600;
     line-height: 140%;
 }
@@ -79,7 +49,6 @@ p {
     margin-top: 30px;
     font-family: Montserrat;
     font-size: 18px;
-    font-style: normal;
     font-weight: 400;
     line-height: 140%;
 }
@@ -112,7 +81,7 @@ p {
 .important {
     width: 100%;
 }
-.page_5 {
+.booking_request {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -152,7 +121,7 @@ p {
     width: 625px;
     height: 595px;
     z-index: -1;
-    background-image: url(../imeges/fon_print.svg);
+    background-image: url(/hotel_for_cats/assets/icons/fon_print.svg);
 } 
 .foot_print1 {
     margin: 170px 110px;
@@ -207,47 +176,4 @@ input {
 .input_note {
     width: 450px;
     min-height: max-content;
-}
-.page_8 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 1200px;
-    height: 585px;
-    margin: 90px 200px 0px 200px;
-    background-color: #FFFEF1;
-    /*border: 1px solid blue;*/
-}
-.picture-important_2 {
-    width: 530px;
-    height: 400px;
-}
-.text-important_2 {
-    margin-left: 70px;
-    width: 500px;
-    height: 400px;
-}
-.h3 {
-    width: 116px;
-    height: 36px;
-    margin-top: 100px;
-    font-family: Montserrat;
-    font-size: 26px;
-    font-weight: 600;
-    line-height: 36px;
-    letter-spacing: 0em;
-    text-align: left;
-}
-.text {
-    width: 472px;
-    height: 132px;
-    margin: 25px 150px 10px 0px;
-    color: var(--, #242424);
-    font-family: Montserrat;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 22px;
-    letter-spacing: 0em;
-    text-align: left;
 }
