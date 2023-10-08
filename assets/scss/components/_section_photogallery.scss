@@ -4,8 +4,13 @@
     flex-wrap: wrap;
     align-content: center;
 
-    @media screen and (max-width: 320px) {}
+    @media screen and (max-width: 320px) {
+        width: auto;
+        display: block;
+        text-align: center;
+    }
 }
+
 
 .photogallery__title {
     margin-bottom: 3.125rem;
@@ -16,6 +21,7 @@
     line-height: 140%;
 
     @media screen and (max-width: 320px) {
+        display: block;
         font-size: 20px;
         margin: 5vw 0 5vw 3vw;
     }
