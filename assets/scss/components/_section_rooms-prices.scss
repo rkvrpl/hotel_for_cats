@@ -6,7 +6,7 @@
     margin: 0px;
     padding: 0px;
 
-    @media screen and (max-width: 320px) {}
+    @media screen and (min-width: 320px) and (max-width : 480px) {}
 
 
     .btn {
@@ -46,98 +46,108 @@
         width: 23.75em;
         column-gap: 0.25rem;
         margin: 1%;
-        border: 1px solid #FAD2DF
-    }
+        border: 1px solid #FAD2DF;
 
-    .card-group .h4 {
-        display: flex;
-        justify-content: space-between;
+        @media screen and (min-width: 320px) and (max-width : 480px) {}
     }
+}
 
-    .discount {
-        text-align: center;
-    }
+.card-group .h4 {
+    display: flex;
+    justify-content: space-between;
 
-    .t-3 {
-        vertical-align: baseline;
-        @extend %font-family;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 140%;
-        /* 22px */
-        color: #242424;
-        margin-bottom: 1.875rem;
-        padding-left: 0.625rem;
-        padding-right: 1.25rem;
-    }
+    @media screen and (min-width: 320px) and (max-width : 480px) {}
+}
 
-    .t-2 {
-        vertical-align: baseline;
-        @extend %font-family;
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 140%;
-        /* 22px */
-        color: #848484;
-        margin-bottom: 1.875rem;
-        padding-left: 1.25rem;
-        padding-right: 1.25rem;
-    }
+.discount {
+    text-align: center;
+}
 
-    .t-1 {
-        vertical-align: bottom;
-        @extend %font-family;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 20px;
-        line-height: 150%;
-        /* 30px */
-        color: #242424;
+.t-3 {
+    vertical-align: baseline;
+    @extend %font-family;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    /* 22px */
+    color: #242424;
+    margin-bottom: 1.875rem;
+    padding-left: 0.625rem;
+    padding-right: 1.25rem;
+}
 
-    }
+.t-2 {
+    vertical-align: baseline;
+    @extend %font-family;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    /* 22px */
+    color: #848484;
+    margin-bottom: 1.875rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+}
 
-    .h4 {
-        vertical-align: baseline;
-        @extend %font-family;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 20px;
-        line-height: 140%;
-        /* 28px */
-        color: #F6A6BF;
-        margin-bottom: 2.1875rem;
-        padding-left: 1.25rem;
-        padding-right: 1.25rem;
-    }
+.t-1 {
+    vertical-align: bottom;
+    @extend %font-family;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 150%;
+    /* 30px */
+    color: #242424;
 
-    .rooms-prices__head {
-        display: flex;
-        padding-bottom: 1.875rem;
-        align-items: center;
-        justify-content: flex-start;
-    }
+}
 
-    .rooms-prices__title {
-        @extend %font-family-bold;
-        margin-top: 10.625rem;
-        padding-right: 25rem;
-    }
+.h4 {
+    vertical-align: baseline;
+    @extend %font-family;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 140%;
+    /* 28px */
+    color: #F6A6BF;
+    margin-bottom: 2.1875rem;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+}
 
-    .discount {
-        background: url(/assets/icons/icon-discount.svg) no-repeat 0 0;
-        width: 17.6875rem;
-        height: 12.875rem;
-        @extend %font-family;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 20px;
-        line-height: 140%;
-        color: #242424;
-        padding: 5.3125rem 3.5rem 4.0625rem 4rem;
-        text-align: center;
-        text-justify: center;
-        margin-top: 5.9375rem;
-    }
+.rooms-prices__head {
+    display: flex;
+    padding-bottom: 1.875rem;
+    align-items: center;
+    justify-content: flex-start;
+
+    @media screen and (min-width: 320px) and (max-width : 480px) {}
+}
+
+.rooms-prices__title {
+    @extend %font-family-bold;
+    margin-top: 10.625rem;
+    padding-right: 25rem;
+
+    @media screen and (min-width: 320px) and (max-width : 480px) {}
+}
+
+.discount {
+    background: url(/assets/icons/icon-discount.svg) no-repeat 0 0;
+    width: 17.6875rem;
+    height: 12.875rem;
+    @extend %font-family;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 140%;
+    color: #242424;
+    padding: 5.3125rem 3.5rem 4.0625rem 4rem;
+    text-align: center;
+    text-justify: center;
+    margin-top: 5.9375rem;
+
+    @media screen and (min-width: 320px) and (max-width : 480px) {}
 }
