@@ -51,6 +51,7 @@
 .card-group .h4 {
     display: flex;
     justify-content: space-between;
+    max-width: 100%;
     @media screen and (min-width: 320px) and (max-width : 480px) {}
 }
 .discount {
