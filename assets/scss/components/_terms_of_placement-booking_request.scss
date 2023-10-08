@@ -8,7 +8,7 @@
     margin: 0px 197px 0px 103px;
     grid-template-columns: 600px 600px;
     grid-template-rows: repeat(4,250px) 1fr;
-    justify-content: end;
+    // justify-content: end;
     /* border: 1px solid blue; */
 }
 .fon_kitty {
@@ -34,51 +34,114 @@
         margin: 122px 738px 70px 0;
     }
 }
-.inprice
-.list_inprice
-.recomm
-.list_recomm
-.food
+.inprice {
+    border-bottom: 3px solid #F6A6BF;
+}
+.list_inprice {
+    border-bottom: 3px solid #F6A6BF;
+}
+.recomm {
+    border-bottom: 3px solid #F6A6BF;
+}
+.list_recomm {
+    border-bottom: 3px solid #F6A6BF;
+}
+.food {
+    border-bottom: 3px solid #F6A6BF;
+}
 .food_text {
     border-bottom: 3px solid #F6A6BF;
 }
 
-.title_inpice
-.recomendations
-.food_selection
+.title_inpice {
+    margin-top: 30px;
+    @extend %font-family-bold;
+    font-size: 26px; 
+    font-weight: 600;
+}
+
+.recomendations {
+    margin-top: 30px;
+    @extend %font-family-bold;
+    font-size: 26px; 
+    font-weight: 600;
+}
+
+.food_selection {
+    margin-top: 30px;
+    @extend %font-family-bold;
+    font-size: 26px; 
+    font-weight: 600;
+}
+
 .title_attantion {
     margin-top: 30px;
     @extend %font-family-bold;
     font-size: 26px; 
     font-weight: 600;
-    line-height: 140%;
 }
 
-.li_1
-.li_2
+.li_1 {
+    margin-top: 30px;
+    @extend %font-family;
+    font-size: 18px;
+    font-weight: 400;
+    li {
+        margin-right: 210px;
+        list-style-type: none;/*прячет разметку*/
+        margin-bottom: 15px;
+    }   
+    li::before {
+        color: #F6A6BF;
+        content: "\25CF"; /*розовая точка спецсимвол*/
+        padding-right: 10px;
+    }
+}
+
+.li_2 {
+    margin-top: 30px;
+    @extend %font-family;
+    font-size: 18px;
+    font-weight: 400;
+    li {
+        margin-right: 210px;
+        list-style-type: none;/*прячет разметку*/
+        margin-bottom: 15px;
+    }   
+    li::before {
+        color: #F6A6BF;
+        content: "\25CF"; /*розовая точка спецсимвол*/
+        padding-right: 10px;
+    }
+}
 .li_3 {
     margin-top: 30px;
+    @extend %font-family;
+    font-size: 18px;
+    font-weight: 400;
+    li {
+        margin-right: 210px;
+        list-style-type: none;/*прячет разметку*/
+        margin-bottom: 15px;
+    }   
+    li::before {
+        color: #F6A6BF;
+        content: "\25CF"; /*розовая точка спецсимвол*/
+        padding-right: 10px;
+    }
+}
+
+.notices_1 {
+    margin: 5% 0;
+    color: var(--, #242424);
     @extend %font-family;
     font-size: 18px;
     font-weight: 400;
     line-height: 140%;
 }
 
-ul>li {
-        margin-right: 210px;
-        list-style-type: none;/*прячет разметку*/
-        margin-bottom: 15px;
-}
-
-li::before {
-            color: #F6A6BF;
-            content: "\25CF"; /*розовая точка спецсимвол*/
-            padding-right: 10px;
-        }
-
-.notices_1
 .notices_2 {
-    margin: 1rem 150px 0.5rem 50px;
+    margin-top: 5% 0;
     color: var(--, #242424);
     @extend %font-family;
     font-size: 18px;
@@ -189,6 +252,7 @@ li::before {
 input {
     border: none;
     background-color: #FFFEF1;
+    border-bottom: 3px solid #F6A6BF;
 }
 
 .cont_button {
