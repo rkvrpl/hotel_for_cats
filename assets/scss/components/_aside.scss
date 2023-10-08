@@ -64,8 +64,8 @@
 }
 .address__map {
     grid-area: 3/2/4/4;
-    width: 75vw;//1200px;
-    height: 31.25rem; //500px;
+    width: 75vw;
+    height: 31.25rem; 
     margin: 0 auto;
     @media screen  and (max-width: 320px){
         max-width: 300px;

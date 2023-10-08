@@ -4,12 +4,12 @@
 .terms_of_placement {
     display: grid;
     width: 1300px;
-    /*height: 1463px; */
-    margin: 0px 197px 0px 103px;
+    margin: 0 12vw;
     grid-template-columns: 600px 600px;
     grid-template-rows: repeat(4,250px) 1fr;
-    // justify-content: end;
-    /* border: 1px solid blue; */
+    @media screen and (max-width: 1200px){
+        display: none;
+    }
 }
 .fon_kitty {
     position: absolute;
@@ -177,7 +177,10 @@
     width: 1278px;
     height: 694px;
     margin: 140px 200px 0px 122px;
-    /* border: 1px solid blue; */
+    grid-template-rows: repeat(4,250px) 1fr;
+    @media screen and (max-width: 1200px){
+        display: none;
+    }
 }
 
 .h2 {
@@ -235,15 +238,6 @@
     height: 554px;
     gap: 40px; 
 }
-
-/*.cont_mane,
-.cont_phone,
-.cont_checkin,
-.cont_checkout,
-.cont_petmane,
-.cont_type {
-    border: 1px solid black;
-}*/
 
 .cont_note {
     grid-area: 4/1/5/3;

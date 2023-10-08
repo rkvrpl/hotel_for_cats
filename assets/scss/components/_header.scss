@@ -54,8 +54,6 @@
 .header__btn-insta:active{
     color:#7BCBE2;
 }
-// Стили для блока-№2 
-
 .container-2{
     display:flex;
     flex-direction: row;
@@ -142,7 +140,6 @@
     margin-top:1em;
 }
 .btn-send{
-    // @extend %button-small; 
     width:100%;
     height:30%;
     background-color: #F6A6BF;
@@ -185,8 +182,6 @@
 .second-header__hidden-text{
     display: none;
 }
-// Все медиазапросы
-
 @media (max-width:1150px) {
     .header__container,.second-header__small-img-block{
         justify-content: space-between;
