@@ -121,10 +121,10 @@
     position:relative;
     max-width: 50%;
 }
-.h1{
+.second-header__h1{
     font-size:3em;
 }
-.text{
+.second-header__main-text{
     font-size:1.1em;
 }
 .user-form{
@@ -204,11 +204,11 @@
     .container-2{
         justify-content: space-between;
     }
-    .h1{
+    .second-header__h1{
         padding: 10px;
         font-size: 2.5em;
     }
-    .text{
+    .second-header__main-text{
         padding: 10px;
     }
     .user-form{
@@ -216,7 +216,7 @@
     }
 }
 @media (max-width:960px){
-    .h1{
+    .second-header__h1{
         padding: 35px;
         font-size: 2em;
     }
@@ -249,10 +249,10 @@
         display: block;
         font-size: 1em;
     }
-    .text{
+    .second-header__main-text{
         margin-top: 0;
     }
-    .h1{
+    .second-header__h1{
         font-size: 1.25em;
     }
     .link-1 {
@@ -294,10 +294,10 @@
     .second-header__img-block,.second-header__wrap-block,.second-header__small-img-block{
         max-width: 100%;
     }
-    .text,.second-header__hidden-text{
+    .second-header__main-text,.second-header__hidden-text{
         font-size: 1.25em;
     }
-    .h1,.text,.second-header__hidden-text{
+    .second-header__h1,.second-header__main-text,.second-header__hidden-text{
         padding: 0.5em;
     }
     .second-header__wrap-block{
