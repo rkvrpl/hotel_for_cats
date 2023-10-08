@@ -121,7 +121,7 @@
 
     .rooms-prices__title {
         @extend %font-family-bold;
-        margin-top: 95px;
+        margin-top: 170px;
         padding-right: 400px;
     }
 
@@ -138,5 +138,6 @@
         padding: 85px 56px 65px 64px;
         text-align: center;
         text-justify: center;
+        margin-top: 95px;
     }
 }
