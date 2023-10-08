@@ -6,7 +6,12 @@
     margin: 0px;
     padding: 0px;
 
-    @media screen and (min-width: 320px) and (max-width : 480px) {}
+    @media screen and (min-width: 320px) and (max-width : 480px) {
+        display: flex;
+        max-width: max-content;
+        flex-direction: column;
+        justify-content: start;
+    }
 
 
     .btn {
