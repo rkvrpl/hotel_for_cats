@@ -1,4 +1,4 @@
-.container {
+.header__container {
     @extend %font-family;
     display: flex;
     justify-content: space-around;
@@ -136,7 +136,7 @@
     position: absolute;
     bottom:28%;
 }
-.input[type="text"], input[type="tel"] {
+.form__name,.form__phoneNumber{
     border: none;
     border-bottom: 2px solid #848484;
     margin-top:1em;
@@ -188,7 +188,7 @@
 // Все медиазапросы
 
 @media (max-width:1150px) {
-    .container,.second-header__small-img-block{
+    .header__container,.second-header__small-img-block{
         justify-content: space-between;
     }
     .header__info-data{
@@ -229,7 +229,7 @@
     }
 }
 @media (max-width:820px){
-    .container{
+    .header__container{
         flex-direction: column;
         padding: 0;
     }
