@@ -1,62 +1,62 @@
-.rooms-prices {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
-    margin: 0px;
-    padding: 0px;
-    @media screen and (min-width: 320px) and (max-width : 480px) {
-        display: flex;
-        max-width: max-content;
-        flex-direction: column;
-        justify-content: start;
-    }
-    .btn {
-        display: inline-flex;
-        @extend %button-big;
-        background-color: #F6A6BF;
-        border-radius: 100px;
-        align-items: center;
-        justify-content: center;
-        @extend %font-family;
-        color: #fff;
-        font-size: 1.25em;
-        text-decoration: none;
-        box-sizing: border-box;
-        cursor: pointer;
-    }
-    .btn:hover {
-        background-color: #fff;
-        border-color: #F6A6BF;
-        color: #F6A6BF;
-    }
-    .card-body {
-        @extend %font-family;
-        padding-left: 1.25rem;
-        border: 1px solid #FAD2DF
-    }
-    .card-img-top {
-        border-radius: 0px;
-        object-fit: cover;
-    }
-    .card {
-        @extend %font-family;
-        width: 23.75em;
-        column-gap: 0.25rem;
-        margin: 1%;
-        border: 1px solid #FAD2DF;
-        @media screen and (min-width: 320px) and (max-width : 480px) {}
-    }
-}
+// .rooms-prices {
+//     display: flex;
+//     flex-direction: column;
+//     flex-wrap: wrap;
+//     align-content: center;
+//     margin: 0px;
+//     padding: 0px;
+//     @media screen and (min-width: 320px) and (max-width : 480px) {
+//         display: flex;
+//         max-width: max-content;
+//         flex-direction: column;
+//         justify-content: start;
+//     }
+//     .btn {
+//         display: inline-flex;
+//         @extend %button-big;
+//         background-color: #F6A6BF;
+//         border-radius: 100px;
+//         align-items: center;
+//         justify-content: center;
+//         @extend %font-family;
+//         color: #fff;
+//         font-size: 1.25em;
+//         text-decoration: none;
+//         box-sizing: border-box;
+//         cursor: pointer;
+//     }
+//     .btn:hover {
+//         background-color: #fff;
+//         border-color: #F6A6BF;
+//         color: #F6A6BF;
+//     }
+//     .card-body {
+//         @extend %font-family;
+//         padding-left: 1.25rem;
+//         border: 1px solid #FAD2DF
+//     }
+//     .card-img-top {
+//         border-radius: 0px;
+//         object-fit: cover;
+//     }
+//     .card {
+//         @extend %font-family;
+//         width: 23.75em;
+//         column-gap: 0.25rem;
+//         margin: 1%;
+//         border: 1px solid #FAD2DF;
+//         @media screen and (min-width: 320px) and (max-width : 480px) {}
+//     }
+// }
 .card-group .h4 {
     display: flex;
     justify-content: space-between;
     max-width: 100%;
     @media screen and (min-width: 320px) and (max-width : 480px) {}
 }
-.discount {
-    text-align: center;
-}
+// .discount {
+//     text-align: center;
+// }
 .t-3 {
     vertical-align: baseline;
     @extend %font-family;
@@ -103,32 +103,94 @@
     padding-left: 1.25rem;
     padding-right: 1.25rem;
 }
-.rooms-prices__head {
+// .rooms-prices__head {
+//     display: flex;
+//     padding-bottom: 1.875rem;
+//     align-items: center;
+//     justify-content: flex-start;
+//     @media screen and (min-width: 320px) and (max-width : 480px) {}
+// }
+// .rooms-prices__title {
+//     @extend %font-family-bold;
+//     margin-top: 10.625rem;
+//     padding-right: 25rem;
+//     @media screen and (min-width: 320px) and (max-width : 480px) {}
+// }
+// .discount {
+//     background: url(/assets/icons/icon-discount.svg) no-repeat 0 0;
+//     width: 17.6875rem;
+//     height: 12.875rem;
+//     @extend %font-family;
+//     font-style: normal;
+//     font-weight: 600;
+//     font-size: 20px;
+//     line-height: 140%;
+//     color: #242424;
+//     padding: 5.3125rem 3.5rem 4.0625rem 4rem;
+//     text-align: center;
+//     text-justify: center;
+//     margin-top: 5.9375rem;
+//     @media screen and (min-width: 320px) and (max-width : 480px) {}
+// }
+.rooms-prices__container{
+    max-width: 100%;
+    margin-top: 10em;
+}
+.rooms-prices__head{
     display: flex;
-    padding-bottom: 1.875rem;
+    justify-content: space-around;
     align-items: center;
-    justify-content: flex-start;
-    @media screen and (min-width: 320px) and (max-width : 480px) {}
 }
 .rooms-prices__title {
     @extend %font-family-bold;
-    margin-top: 10.625rem;
-    padding-right: 25rem;
-    @media screen and (min-width: 320px) and (max-width : 480px) {}
+    padding-right: 25%;
+    max-width: 50%;
 }
 .discount {
     background: url(/assets/icons/icon-discount.svg) no-repeat 0 0;
-    width: 17.6875rem;
-    height: 12.875rem;
+    max-width: 50%;
     @extend %font-family;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
+    font-size: 1.25em;
     line-height: 140%;
     color: #242424;
-    padding: 5.3125rem 3.5rem 4.0625rem 4rem;
+    padding: 5.3rem 5.5rem 4.5rem 4rem;
     text-align: center;
-    text-justify: center;
-    margin-top: 5.9375rem;
-    @media screen and (min-width: 320px) and (max-width : 480px) {}
+}
+.rooms-prices__container-for-cards{
+    display: flex;
+    justify-content: space-around;
+}
+.btn {
+    display: inline-flex;
+    @extend %button-big;
+    background-color: #F6A6BF;
+    border-radius: 100px;
+    align-items: center;
+    justify-content: center;
+    @extend %font-family;
+    color: #fff;
+    font-size: 1.25em;
+    text-decoration: none;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: #fff;
+    border-color: #F6A6BF;
+    color: #F6A6BF;
+}
+.card-body {
+    @extend %font-family;
+    padding-left: 1.25rem;
+    border: 1px solid #FAD2DF;
+}
+.card-img-top {
+    object-fit: cover;
+}
+.card {
+    @extend %font-family;
+    width: 23.75em;
+    column-gap: 0.25rem;
+    margin: 1%;
+    border: 1px solid #FAD2DF;
 }
