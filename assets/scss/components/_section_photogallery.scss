@@ -13,8 +13,6 @@
         align-items: flex-start;
     }
 }
-
-
 .photogallery__title {
     margin-bottom: 3.125rem;
     margin-top: 10.625rem;
@@ -22,7 +20,6 @@
     font-size: 40px;
     font-weight: 600;
     line-height: 140%;
-
     @media screen and (min-width: 320px) and (max-width : 480px) {
         display: block;
         font-size: 20px;
@@ -37,21 +34,17 @@
     gap: 1.875rem;
     margin: auto;
     width: 75rem;
-
     @media screen and (min-width: 320px) and (max-width : 480px) {
         display: block;
     }
-
     .photogallery__img-room-big {
         grid-row: span 3;
     }
-
     .photogallery__number {
         display: grid;
         grid-column: 2 / span 2;
         grid-row: 2;
         @extend %font-family;
-
         @media screen and (min-width: 320px) and (max-width : 480px) {
             display: none;
             /* display: flex;
@@ -61,7 +54,6 @@
             margin: 6vw 0.6vw 1.8vw 1vw;*/
         }
     }
-
     .photogallery__arrows {
         display: grid;
         grid-column: 2 / 3;
@@ -71,13 +63,10 @@
         gap: 0.625rem;
         padding: 0px;
         margin-bottom: 0.625rem;
-
         @media screen and (min-width: 320px) and (max-width : 480px) {
             display: none;
         }
-
     }
-
     .photogallery__arrow-back,
     .photogallery__arrow-forward {
         display: inline-flex;
@@ -90,9 +79,7 @@
         left: 0px;
         top: 0px;
         border: 3px solid #F6A6BF;
-        ;
     }
-
     .photogallery__arrow-back::before,
     .photogallery__arrow-forward::before {
         position: absolute;
@@ -101,7 +88,6 @@
         height: 1.375rem;
         content: "";
     }
-
     .photogallery__arrow-back::before {
         top: 1.5rem;
         left: 1.625rem;
@@ -109,7 +95,6 @@
         border-left: 3px solid white;
         transform: rotate(-45deg);
     }
-
     .photogallery__arrow-forward::before {
         top: 1.5rem;
         left: 1.125rem;
@@ -117,20 +102,16 @@
         border-right: 3px solid white;
         transform: rotate(45deg);
     }
-
     /* Иземнение фона и цвета при наведении*/
     .photogallery__arrow-back:hover,
     .photogallery__arrow-forward:hover {
         background-color: white;
     }
-
     .photogallery__arrow-back:hover:before,
     .photogallery__arrow-forward:hover:before {
         border-color: pink;
     }
-
     @media screen and (min-width: 320px) and (max-width : 480px) {
-
         .photogallery__img-room-big,
         .photogallery__img-cat-paw,
         .photogallery__img-room {
@@ -142,11 +123,9 @@
             padding-right: 0.9375em;
             float: left;
         }
-
         .photogallery__img-cat-paw {
             opacity: 0.7;
         }
-
         .photogallery__img-room {
             display: none;
         }

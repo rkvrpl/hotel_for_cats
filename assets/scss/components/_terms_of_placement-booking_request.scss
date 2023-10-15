@@ -3,13 +3,13 @@
 }
 .terms_of_placement {
     display: grid;
-    width: 100%;
-    /*height: 1463px; */
-    margin: 0px 197px 0px 103px;
-    grid-template-columns: 30vw 30vw;
+    width: 1300px;
+    margin: 0 auto;
+    grid-template-columns: 600px 600px;
     grid-template-rows: repeat(4,250px) 1fr;
-    justify-content: center;
-    /* border: 1px solid blue; */
+    @media screen and (max-width: 1200px){
+        display: none;
+    }
 }
 .fon_kitty {
     position: absolute;
@@ -178,8 +178,15 @@
     // flex-wrap: wrap;
     width: 100%;
     height: 694px;
+<<<<<<< HEAD
     // margin: 140px 200px 0px 122px;
     /* border: 1px solid blue; */
+=======
+    margin: 2vw auto;
+    @media screen and (max-width: 1200px){
+        display: none;
+    }
+>>>>>>> f1cb93072ca5721eef9873d0f621ea44d2f7a016
 }
 
 .h2 {
@@ -237,15 +244,6 @@
     height: 554px;
     gap: 40px; 
 }
-
-/*.cont_mane,
-.cont_phone,
-.cont_checkin,
-.cont_checkout,
-.cont_petmane,
-.cont_type {
-    border: 1px solid black;
-}*/
 
 .cont_note {
     grid-area: 4/1/5/3;
